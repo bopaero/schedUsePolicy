@@ -301,12 +301,106 @@ nav::-webkit-scrollbar-thumb { background:var(--border-bright); }
 .toc-mobile a { color:var(--text-muted); text-decoration:none; }
 .toc-mobile a:hover { color:var(--accent); }
 
+/* PRINT HEADER (hidden on screen) */
+.print-header {
+  display:none;
+  padding:0 0 16pt;
+  border-bottom:2pt solid #ccc;
+  margin-bottom:20pt;
+}
+.print-header-logo { font-size:16pt; font-weight:800; letter-spacing:1px; color:#111; }
+.print-header-logo span { color:#005580; }
+.print-header-sub { font-size:9pt; color:#666; margin-top:4pt; }
+
+/* PRINT BUTTON */
+.print-btn {
+  font-family:var(--mono); font-size:12px; color:var(--text-muted);
+  background:none; border:1px solid var(--border-bright);
+  padding:5px 10px; border-radius:4px; cursor:pointer;
+  letter-spacing:0.5px; display:flex; align-items:center; gap:6px;
+  white-space:nowrap; transition:color 0.15s, border-color 0.15s;
+}
+.print-btn:hover { color:var(--text); border-color:var(--text-muted); }
+
 /* MOBILE */
 @media (max-width:800px) {
   nav { display:none; }
   .content { padding:24px 20px 60px; }
   .hero { padding:20px; }
   .hdr-right .change-legend { display:none; }
+  .print-btn { display:none; }
+}
+
+/* PRINT */
+@media print {
+  * { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+  /* Force light/document colors regardless of system dark mode */
+  :root {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --surface2: #f8f8f8;
+    --border: #cccccc;
+    --border-bright: #aaaaaa;
+    --accent: #005580;
+    --accent2: #006644;
+    --warn: #996600;
+    --text: #111111;
+    --text-muted: #444444;
+    --red: #aa0000;
+    --change-bar: #cc8800;
+  }
+
+  header, nav, footer, .toc-mobile, .change-legend, .hdr-right,
+  .version-wrap, .hero-meta { display:none !important; }
+
+  body { background:#fff; color:#111; font-size:11pt; line-height:1.6; }
+
+  .page { display:block; max-width:100%; }
+  .content { padding:0; }
+
+  /* Print header — shown only in print */
+  .print-header { display:block !important; }
+
+  .hero {
+    background:#f8f8f8; border:1px solid #ccc; border-radius:0;
+    padding:16pt 20pt; margin-bottom:24pt;
+    page-break-inside:avoid;
+  }
+  .hero h1 { font-size:18pt; color:#111; }
+  .hero h1 span { color:#005580; }
+  .hero p { color:#444; font-size:10pt; }
+
+  .guide-section { margin-bottom:24pt; page-break-inside:avoid; }
+  .guide-section h2 {
+    font-size:14pt; color:#111; border-bottom:1pt solid #ccc;
+    padding-bottom:4pt; margin-bottom:12pt;
+  }
+  .guide-section h3 { font-size:11pt; color:#005580; margin:16pt 0 6pt; }
+  .guide-section h4 { font-size:10pt; color:#111; margin:10pt 0 4pt; }
+  .guide-section p, .guide-section li { color:#333; font-size:10.5pt; }
+
+  .callout {
+    border-radius:0; padding:8pt 10pt; margin:8pt 0;
+    border-left-width:3pt;
+  }
+  .callout p { font-size:10pt; }
+
+  .fee-table { font-size:10pt; }
+  .fee-table th { background:#eeeeee; }
+
+  /* Change bar — keep visible in print */
+  .changed { padding-left:10pt !important; }
+  .changed::before { width:2pt; background:#cc8800; }
+
+  a { color:#005580; text-decoration:none; }
+  a[href]::after { content:''; } /* suppress URL printing */
+
+  /* Page breaks */
+  .guide-section h2 { page-break-before:auto; }
+  #scheduling, #access, #operation, #fees, #status, #international {
+    page-break-before:always;
+  }
 }
 
 /* FOOTER */
@@ -339,6 +433,7 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
   </a>
   <div class="hdr-right">
     <div class="change-legend"><div class="change-legend-bar"></div> Changed in this version</div>
+    <button class="print-btn" onclick="window.print()">⎙ Print / Save PDF</button>
     <div class="version-wrap">
       <button class="version-btn" id="versionBtn" onclick="toggleVersionDropdown()">
         <span id="versionLabel"></span>
@@ -368,6 +463,12 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
   </nav>
 
   <main class="content">
+
+    <!-- Print-only document header -->
+    <div class="print-header">
+      <div class="print-header-logo">bop Aero <span>Services LLC</span></div>
+      <div class="print-header-sub">Aircraft Ownership Programs — Scheduling and Use Policy &nbsp;|&nbsp; <span id="printVersion"></span></div>
+    </div>
 
     <!-- Mobile TOC -->
     <details class="toc-mobile">
@@ -630,6 +731,7 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
 // Populate version display
 document.getElementById('versionLabel').textContent = CURRENT_VERSION;
 document.getElementById('footerVersion').textContent = CURRENT_VERSION;
+document.getElementById('printVersion').textContent = CURRENT_VERSION;
 
 // Build version dropdown
 (function(){
