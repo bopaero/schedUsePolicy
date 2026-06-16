@@ -32,7 +32,6 @@
   --text: #e2e8f0;
   --text-muted: #8899aa;
   --red: #ff4444;
-  --change-bar: #f59e0b;
   --mono: 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
   --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
@@ -51,7 +50,6 @@
     --text: #1a1a2e;
     --text-muted: #5a6070;
     --red: #cc2222;
-    --change-bar: #d48400;
   }
 }
 
@@ -90,48 +88,7 @@ header {
   .logo-light { display:block; }
   .logo-divider { background:#333; }
 }
-.hdr-right { display:flex; align-items:center; gap:12px; }
-
-/* VERSION PICKER */
-.version-wrap { position:relative; }
-.version-btn {
-  font-family:var(--mono); font-size:12px; color:var(--accent);
-  background:none; border:1px solid var(--accent);
-  padding:5px 10px; border-radius:4px; cursor:pointer;
-  letter-spacing:0.5px; display:flex; align-items:center; gap:6px;
-  white-space:nowrap;
-}
-.version-btn:hover { background:rgba(0,212,255,0.08); }
-.version-caret { font-size:9px; opacity:0.7; }
-
-.version-dropdown {
-  display:none; position:absolute; right:0; top:calc(100% + 6px);
-  background:var(--surface); border:1px solid var(--border-bright);
-  border-radius:8px; min-width:240px; z-index:200;
-  box-shadow:0 8px 24px rgba(0,0,0,0.4);
-  overflow:hidden;
-}
-.version-dropdown.open { display:block; }
-.vd-header {
-  font-family:var(--mono); font-size:10px; letter-spacing:1.5px;
-  text-transform:uppercase; color:var(--text-muted);
-  padding:10px 14px 6px;
-}
-.vd-item {
-  display:flex; align-items:center; justify-content:space-between;
-  padding:8px 14px; font-size:13px; text-decoration:none;
-  color:var(--text-muted); border-top:1px solid var(--border);
-  transition:background 0.1s;
-}
-.vd-item:hover { background:var(--surface2); color:var(--text); }
-.vd-item.current { color:var(--accent); }
-.vd-item.current .vd-tag {
-  font-family:var(--mono); font-size:10px; background:rgba(0,212,255,0.12);
-  color:var(--accent); padding:1px 6px; border-radius:3px;
-}
-.vd-date { font-family:var(--mono); font-size:12px; }
-.vd-label { font-size:11px; color:var(--text-muted); margin-top:1px; }
-.vd-item-inner { display:flex; flex-direction:column; }
+.hdr-right { font-family:var(--mono); font-size:11px; color:var(--text-muted); text-align:right; }
 
 /* LAYOUT */
 .page { display:flex; max-width:1100px; margin:0 auto; gap:0; }
@@ -196,41 +153,6 @@ nav::-webkit-scrollbar-thumb { background:var(--border-bright); }
 .guide-section li { margin-bottom:6px; }
 .guide-section li strong { color:var(--text); }
 
-/* CHANGE BAR */
-.changed {
-  position:relative;
-  padding-left:14px !important;
-}
-.changed::before {
-  content:'';
-  position:absolute;
-  left:0; top:0; bottom:0;
-  width:3px;
-  background:var(--change-bar);
-  border-radius:2px;
-}
-/* For block elements like <p>, <ul>, <ol> that already have padding-left */
-.guide-section ul.changed,
-.guide-section ol.changed {
-  padding-left:34px !important;
-}
-/* Section-level change (entire h2 section changed) */
-.guide-section.changed > h2 {
-  color:var(--warn);
-}
-
-/* CHANGE BAR LEGEND */
-.change-legend {
-  display:inline-flex; align-items:center; gap:6px;
-  font-family:var(--mono); font-size:11px; color:var(--text-muted);
-  background:var(--surface2); border:1px solid var(--border);
-  border-radius:4px; padding:4px 10px;
-  white-space:nowrap;
-}
-.change-legend-bar {
-  width:3px; height:14px; background:var(--change-bar); border-radius:2px; flex-shrink:0;
-}
-
 /* INTRO HERO */
 .hero {
   background:var(--surface2);
@@ -245,9 +167,6 @@ nav::-webkit-scrollbar-thumb { background:var(--border-bright); }
 }
 .hero h1 span { color:var(--accent); }
 .hero p { color:var(--text-muted); font-size:15px; max-width:620px; }
-.hero-meta {
-  margin-top:16px; display:flex; align-items:center; gap:10px; flex-wrap:wrap;
-}
 
 /* CALLOUT BOXES */
 .callout {
@@ -306,7 +225,7 @@ nav::-webkit-scrollbar-thumb { background:var(--border-bright); }
   nav { display:none; }
   .content { padding:24px 20px 60px; }
   .hero { padding:20px; }
-  .hdr-right .change-legend { display:none; }
+  .hdr-right { display:none; }
 }
 
 /* FOOTER */
@@ -320,16 +239,6 @@ footer {
 </head>
 <body>
 
-<script>
-// Version history — append a new entry each time you publish an update.
-// archived: path to the snapshot in /versions/; omit for the current version.
-const VERSIONS = [
-  { version: 'v2026-06-16.1', label: 'Initial release', archived: 'versions/v2026-06-16.1.html' },
-  { version: 'v2026-06-16.2', label: 'Current', archived: null },
-];
-const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
-</script>
-
 <header>
   <a class="logo" href="https://bopaero.com">
     <img src="bopAeroLogo.png" height="44" class="logo-dark" style="flex-shrink:0;width:auto" alt="bop Aero logo">
@@ -337,18 +246,7 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
     <div class="logo-divider"></div>
     <div class="logo-title">Scheduling &amp; <span>Use Policy</span></div>
   </a>
-  <div class="hdr-right">
-    <div class="change-legend"><div class="change-legend-bar"></div> Changed in this version</div>
-    <div class="version-wrap">
-      <button class="version-btn" id="versionBtn" onclick="toggleVersionDropdown()">
-        <span id="versionLabel"></span>
-        <span class="version-caret">▼</span>
-      </button>
-      <div class="version-dropdown" id="versionDropdown">
-        <div class="vd-header">Version History</div>
-      </div>
-    </div>
-  </div>
+  <div class="hdr-right">Aircraft Ownership Programs</div>
 </header>
 
 <div class="page">
@@ -387,9 +285,6 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
     <div class="hero">
       <h1>Aircraft Ownership Programs<br><span>Scheduling and Use Policies</span></h1>
       <p>These policies govern the expectations and responsibilities of <strong>BOP AERO SERVICES LLC</strong> (the "Manager") and the Members of any BOP AERO aircraft LLC (the "Members") regarding the scheduling and use of the aircraft.</p>
-      <div class="hero-meta">
-        <div class="change-legend"><div class="change-legend-bar"></div> Changed in this version</div>
-      </div>
     </div>
 
     <!-- 1. Definitions -->
@@ -623,40 +518,10 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
 </div>
 
 <footer>
-  &copy; 2026 BOP AERO SERVICES LLC — All rights reserved. &nbsp;|&nbsp; Aircraft Ownership Programs Scheduling and Use Policy &nbsp;|&nbsp; <span id="footerVersion"></span>
+  &copy; 2026 BOP AERO SERVICES LLC — All rights reserved. &nbsp;|&nbsp; Aircraft Ownership Programs Scheduling and Use Policy
 </footer>
 
 <script>
-// Populate version display
-document.getElementById('versionLabel').textContent = CURRENT_VERSION;
-document.getElementById('footerVersion').textContent = CURRENT_VERSION;
-
-// Build version dropdown
-(function(){
-  var dropdown = document.getElementById('versionDropdown');
-  var reversed = VERSIONS.slice().reverse();
-  reversed.forEach(function(v){
-    var a = document.createElement('a');
-    a.className = 'vd-item' + (v.archived === null ? ' current' : '');
-    a.href = v.archived || '#';
-    if (!v.archived) a.onclick = function(e){ e.preventDefault(); toggleVersionDropdown(); };
-    a.innerHTML =
-      '<div class="vd-item-inner"><div class="vd-date">' + v.version + '</div>' +
-      '<div class="vd-label">' + v.label + '</div></div>' +
-      (v.archived === null ? '<span class="vd-tag">Current</span>' : '');
-    dropdown.appendChild(a);
-  });
-})();
-
-function toggleVersionDropdown(){
-  document.getElementById('versionDropdown').classList.toggle('open');
-}
-document.addEventListener('click', function(e){
-  if (!document.getElementById('versionBtn').contains(e.target)){
-    document.getElementById('versionDropdown').classList.remove('open');
-  }
-});
-
 // Active nav link highlighting
 (function(){
   var links = document.querySelectorAll('.nav-link');
