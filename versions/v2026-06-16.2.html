@@ -197,11 +197,11 @@ nav::-webkit-scrollbar-thumb { background:var(--border-bright); }
 .guide-section li strong { color:var(--text); }
 
 /* CHANGE BAR */
-. {
+.changed {
   position:relative;
   padding-left:14px !important;
 }
-.::before {
+.changed::before {
   content:'';
   position:absolute;
   left:0; top:0; bottom:0;
@@ -210,12 +210,12 @@ nav::-webkit-scrollbar-thumb { background:var(--border-bright); }
   border-radius:2px;
 }
 /* For block elements like <p>, <ul>, <ol> that already have padding-left */
-.guide-section ul.,
-.guide-section ol. {
+.guide-section ul.changed,
+.guide-section ol.changed {
   padding-left:34px !important;
 }
-/* Section-level change (entire h2 section ) */
-.guide-section. > h2 {
+/* Section-level change (entire h2 section changed) */
+.guide-section.changed > h2 {
   color:var(--warn);
 }
 
@@ -390,8 +390,8 @@ nav::-webkit-scrollbar-thumb { background:var(--border-bright); }
   .fee-table th { background:#eeeeee; }
 
   /* Change bar — keep visible in print */
-  . { padding-left:10pt !important; }
-  .::before { width:2pt; background:#cc8800; }
+  .changed { padding-left:10pt !important; }
+  .changed::before { width:2pt; background:#cc8800; }
 
   a { color:#005580; text-decoration:none; }
   a[href]::after { content:''; } /* suppress URL printing */
@@ -419,8 +419,7 @@ footer {
 // archived: path to the snapshot in /versions/; omit for the current version.
 const VERSIONS = [
   { version: 'v2026-06-16.1', label: 'Initial release', archived: 'versions/v2026-06-16.1.html' },
-  { version: 'v2026-06-16.2', label: 'Current', archived: 'versions/v2026-06-16.2.html' },
-  { version: 'v2026-06-16.3', label: 'UpUpdated waitlist description.', archived: null },
+  { version: 'v2026-06-16.2', label: 'Current', archived: null },
 ];
 const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
 </script>
