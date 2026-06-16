@@ -420,7 +420,7 @@ footer {
 const VERSIONS = [
   { version: 'v2026-06-16.1', label: 'Initial release', archived: 'versions/v2026-06-16.1.html' },
   { version: 'v2026-06-16.2', label: 'Current', archived: 'versions/v2026-06-16.2.html' },
-  { version: 'v2026-06-16.3', label: 'UpUpdated waitlist description.', archived: null },
+  { version: 'v2026-06-16.3', label: 'Updated waitlist description', archived: null },
 ];
 const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
 </script>
@@ -520,7 +520,7 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
       <ol>
         <li>The first date available for aircraft usage will be the projected acquisition date of the aircraft plus seven (7) days. The manager will notify members if the planned acquisition date changes.</li>
         <li>When the scheduling window opens, the scheduling order will be determined by members' ownership equity, highest to lowest. When ownership equity is the same, scheduling order will be determined by the date at which the member signed the Subscription Agreement (seniority). The manager will notify each member electronically when their scheduling window will open and close.</li>
-        <li><strong>"Waitlist":</strong> In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft "Waitlist" for the date(s) and times desired. The list order will be determined on a "first come, first serve" basis. Reservations added to the "Waitlist" during the scheduling window are only valid for the remainder of the year.</li>
+        <li class="changed"><strong>Waitlist:</strong> In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. The list order will be determined on a "first come, first serve" basis. Reservations added to the waitlist during the scheduling window are only valid for the remainder of the year. Waitlist reservations are added in the same way a normal reservation is added. However, choose "Waitlist" from the reservation types in the dropdown menu when adding the reservation.</li>
       </ol>
 
       <h3>C. Annual Aircraft Scheduling</h3>
@@ -537,13 +537,13 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
           </ol>
           <p style="margin-top:10px;">The manager will notify each member electronically when their individual scheduling window will open. Each member will have three (3) days to reserve the aircraft for the upcoming year during their individual scheduling window.</p>
         </li>
-        <li><strong>"Waitlist":</strong> In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft "Waitlist" for the date(s) and times desired. The list order will be determined on a "first come, first serve" basis. Reservations added to the "Waitlist" during the Annual Aircraft Scheduling window are only applicable to the upcoming year.</li>
+        <li class="changed"><strong>Waitlist:</strong> In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. The list order will be determined on a "first come, first serve" basis. Reservations added to the waitlist during the Annual Aircraft Scheduling window are only applicable to the upcoming year. Waitlist reservations are added in the same way a normal reservation is added. However, choose "Waitlist" from the reservation types in the dropdown menu when adding the reservation.</li>
       </ol>
 
       <h3>D. Daily Aircraft Scheduling</h3>
       <p>Beginning on <strong>January 1st</strong> each year at midnight (00:00) in the timezone the aircraft is based (base local time), "Daily Aircraft Scheduling" will begin and will remain open twenty-four (24) hours a day, every day, until December 31st at 23:59 (base local time).</p>
       <p>"Daily Aircraft Scheduling" will be on a "first come, first serve" basis.</p>
-      <p><strong>"Waitlist":</strong> In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft "Waitlist" for the date(s) and times desired. Reservations added to the "Waitlist" via the Daily Aircraft Scheduling process are only valid for the current year.</p>
+      <p class="changed"><strong>Waitlist:</strong> In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. Reservations added to the waitlist via the Daily Aircraft Scheduling process are only valid for the current year. Waitlist reservations are added in the same way a normal reservation is added. However, choose "Waitlist" from the reservation types in the dropdown menu when adding the reservation.</p>
 
       <h3>E. Cancellations &amp; Modifications</h3>
 
@@ -623,7 +623,7 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
       <h4>SR22T — Cruise Power Policy</h4>
       <p>In addition to complying with the policies outlined above, members will consider the maximum operational cruise power setting to be <strong>75% power</strong> (based on the cruise performance data in Section 5 of the POH). This has been set by the Manager for engine longevity.</p>
       <div class="callout note"><div class="callout-icon">ℹ️</div><p><strong>This is only a cruise policy.</strong> Takeoff, Full Power Climb Rich of peak technique, and Cruise Climb Lean of Peak technique are expected and allowed.</p></div>
-      <div class="callout warn"><div class="callout-icon">⚠️</div><p>Failure to comply will result in an <strong>excessive engine cruise penalty of $50 per hour</strong> for the entire duration of any cruise segment greater than 75% power.</p></div>
+      <div class="callout warn changed"><div class="callout-icon">⚠️</div><p>Failure to comply will result in an <strong>excessive engine cruise penalty fee of $50 per hour</strong> for the entire duration of any cruise segment greater than 75% power.</p></div>
 
       <h4>SF50</h4>
       <p>TBD</p>

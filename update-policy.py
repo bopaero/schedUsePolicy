@@ -75,43 +75,66 @@ def matches_changed(element_text, changed_texts):
         return False
     for c in changed_texts:
         ratio = SequenceMatcher(None, n.lower(), c.lower()).ratio()
-        if ratio > 0.82:
+        if ratio > 0.80:
             return True
     return False
 
 
 # ── HTML patching ─────────────────────────────────────────────────────────────
 
+def add_class_to_tag(tag_str, cls):
+    """Add a CSS class to an opening HTML tag string."""
+    if 'class="' in tag_str:
+        return re.sub(r'class="([^"]*)"', lambda m: f'class="{m.group(1).strip()} {cls}"', tag_str)
+    return re.sub(r'^(<\w+)', r'\1' + f' class="{cls}"', tag_str)
+
 def apply_change_bars(html, changed_texts):
-    """Add class="changed" to elements whose text matches a changed paragraph.
-    Also removes any change bars from the previous version first."""
+    """Add class="changed" to block elements whose text matches a changed paragraph.
+    Works line-by-line so multiline elements don't confuse the regex."""
 
     # Strip previous change bars — only from class="" attributes, never from CSS
-    html = re.sub(r'(class="[^"]*)\bchanged\b([^"]*")', r'\1\2', html)
-    html = re.sub(r' class="\s*"', '', html)   # remove empty class=""
+    html = re.sub(r'(class="[^"]*)\bchanged\b\s*([^"]*")', r'\1\2', html)
+    html = re.sub(r' class="\s*"', '', html)
 
     if not changed_texts:
         return html
 
-    def patch_element(m):
-        tag     = m.group(1)
-        attrs   = m.group(2)
-        content = m.group(3)
-        if matches_changed(content, changed_texts):
-            if 'class=' in attrs:
-                attrs = re.sub(r'class="([^"]*)"', lambda a: f'class="{a.group(1).strip()} changed"'.replace('  ', ' '), attrs)
-            else:
-                attrs = attrs.rstrip() + ' class="changed"'
-        return f'<{tag}{attrs}>{content}</{tag}>'
+    lines = html.split('\n')
+    result = []
+    i = 0
+    BLOCK_TAGS = ('p', 'li', 'td', 'h3', 'h4')
+    open_tag_re = re.compile(r'^(\s*)<(' + '|'.join(BLOCK_TAGS) + r')(\b[^>]*)>(.*)', re.DOTALL)
 
-    # Apply to block-level content elements
-    html = re.sub(
-        r'<(p|li|td|h3|h4)((?:[^>](?!<(?!\/\1)))*?)>(.*?)</\1>',
-        patch_element,
-        html,
-        flags=re.DOTALL
-    )
-    return html
+    while i < len(lines):
+        line = lines[i]
+        m = open_tag_re.match(line)
+        if m:
+            indent, tag, attrs, rest = m.group(1), m.group(2), m.group(3), m.group(4)
+            # Gather full element content (may span multiple lines)
+            content_lines = [rest]
+            close = f'</{tag}>'
+            j = i
+            while close not in '\n'.join(content_lines) and j < len(lines) - 1:
+                j += 1
+                content_lines.append(lines[j])
+            full_content = '\n'.join(content_lines)
+            if matches_changed(full_content, changed_texts):
+                tag_open = f'<{tag}{attrs}>'
+                tag_open = add_class_to_tag(tag_open, 'changed')
+                result.append(f'{indent}{tag_open}{full_content}')
+                i = j + 1
+                continue
+            else:
+                result.append(line)
+                if j > i:
+                    result.extend(lines[i+1:j+1])
+                    i = j + 1
+                    continue
+        else:
+            result.append(line)
+        i += 1
+
+    return '\n'.join(result)
 
 
 # ── Version management ────────────────────────────────────────────────────────
