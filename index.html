@@ -327,8 +327,38 @@ nav::-webkit-scrollbar-thumb { background:var(--border-bright); }
   nav { display:none; }
   .content { padding:24px 20px 60px; }
   .hero { padding:20px; }
+
+  header {
+    height:auto;
+    min-height:56px;
+    padding:10px 14px;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .logo img { height:32px !important; }
+  .logo-title { font-size:13px; letter-spacing:0.5px; }
+  .logo-divider { height:18px; }
+
+  .hdr-right {
+    width:100%;
+    justify-content:flex-end;
+    gap:8px;
+  }
   .hdr-right .change-legend { display:none; }
-  .print-btn { display:none; }
+
+  .print-btn {
+    font-size:11px;
+    padding:4px 8px;
+    gap:4px;
+  }
+  .version-btn {
+    font-size:11px;
+    padding:4px 8px;
+  }
+  .version-dropdown { min-width:200px; }
+
+  nav { top:0; }
+  .guide-section { scroll-margin-top:120px; }
 }
 
 /* PRINT */
