@@ -197,11 +197,11 @@ nav::-webkit-scrollbar-thumb { background:var(--border-bright); }
 .guide-section li strong { color:var(--text); }
 
 /* CHANGE BAR */
-. {
+.changed {
   position:relative;
   padding-left:14px !important;
 }
-.::before {
+.changed::before {
   content:'';
   position:absolute;
   left:0; top:0; bottom:0;
@@ -210,12 +210,12 @@ nav::-webkit-scrollbar-thumb { background:var(--border-bright); }
   border-radius:2px;
 }
 /* For block elements like <p>, <ul>, <ol> that already have padding-left */
-.guide-section ul.,
-.guide-section ol. {
+.guide-section ul.changed,
+.guide-section ol.changed {
   padding-left:34px !important;
 }
-/* Section-level change (entire h2 section ) */
-.guide-section. > h2 {
+/* Section-level change (entire h2 section changed) */
+.guide-section.changed > h2 {
   color:var(--warn);
 }
 

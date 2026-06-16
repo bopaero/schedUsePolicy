@@ -86,10 +86,9 @@ def apply_change_bars(html, changed_texts):
     """Add class="changed" to elements whose text matches a changed paragraph.
     Also removes any change bars from the previous version first."""
 
-    # Strip previous change bars
-    html = re.sub(r'\bchanged\b', '', html)
-    html = re.sub(r'\s*class="\s*"', '', html)   # remove empty class=""
-    html = re.sub(r'\s*class=\'\s*\'', '', html)
+    # Strip previous change bars — only from class="" attributes, never from CSS
+    html = re.sub(r'(class="[^"]*)\bchanged\b([^"]*")', r'\1\2', html)
+    html = re.sub(r' class="\s*"', '', html)   # remove empty class=""
 
     if not changed_texts:
         return html
@@ -100,7 +99,7 @@ def apply_change_bars(html, changed_texts):
         content = m.group(3)
         if matches_changed(content, changed_texts):
             if 'class=' in attrs:
-                attrs = re.sub(r'class="([^"]*)"', lambda a: f'class="{a.group(1).strip()} changed"', attrs)
+                attrs = re.sub(r'class="([^"]*)"', lambda a: f'class="{a.group(1).strip()} changed"'.replace('  ', ' '), attrs)
             else:
                 attrs = attrs.rstrip() + ' class="changed"'
         return f'<{tag}{attrs}>{content}</{tag}>'
