@@ -1,0 +1,119 @@
+Aircraft Ownership Programs Scheduling and Use Policies
+The Scheduling and Use Policies outlined in this document govern the expectations and responsibilities of BOP A[bopAero__Logo_Normal.svg]ERO SERVICES LLC (the “Manager”) and the Members of any BOP AERO aircraft LLC (the “Members”) regarding the scheduling and use of the aircraft.
+Table of Contents:
+Definitions 2Aircraft Scheduling 3Aircraft Access 6Aircraft Operation & Use 7Assessment of Fees/Penalties 11Aircraft Operational Status 12International Operations 13
+Aircraft: The aircraft owned by the member’s LLC.
+Base: The physical location the aircraft is stored when not in possession of a member.
+Trip: All planned or actual points of takeoff and/or landing, originating at the location where the member took possession of the aircraft, and ending at the last point of landing, planned or actual, prior to transferring possession of the aircraft.
+Reservation: The scheduled length of time a member will possess the aircraft.
+Leg: The period of time and distance an aircraft operates between a departure point and a landing point.
+Calendar day: A twenty-four (24) hour period beginning at 00:00 and ending at 23:59.
+“Use” day: Five (5) flight hours measured within a “Calendar day” in the time zone in which the aircraft is located at the start of the day. The “Use” day is used for planning, bookkeeping, and fee purposes only. It has no direct correlation to member usage.
+“Non-use” day: A planned or unplanned non-usage of the aircraft for a “Calendar day” while a member has possession of the aircraft. This is determined by the time zone where the aircraft last terminated operations for the day.
+Member: Shall mean any registered Member of the program and, for the purposes of this Agreement, shall also include any Lessee, who shall be entitled to the same rights, privileges, and obligations as a Member unless otherwise specified.
+Aircraft Scheduling
+A. Schedule management software.
+1. bop Aero uses Flight Circle to manage each aircraft’s schedule. All member new reservations, modifications, and cancellations are managed through the web based app. The manager will provide all new members access upon entry into an aircraft program. A web based user guide is provided that can answer most questions regarding use of the software.
+B. PRIOR TO aircraft acquisition (if applicable).
+Not applicable to lessees.
+1. The first date available for aircraft usage will be the projected acquisition date of the aircraft plus seven (7) days. The manager will notify members if the planned acquisition date changes.
+2. When the scheduling window opens, the scheduling order will be determined by members ownership equity, highest to lowest. When ownership equity is the same, scheduling order will be determined by the date at which the member signed the Subscription Agreement (seniority). The manager will notify each member electronically when their scheduling window will open and close.
+a) In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft “Waitlist” for the date(s) and times desired. The list order will be determined on a “first come, first serve” basis. Reservations added to the “Waitlist”. Reservations added to the “Waitlist” during the scheduling window are only valid for the remainder of the year.
+C. Annual Aircraft Scheduling.
+Not applicable to lessees.
+1. Each year there will be a thirty-one (31) day window beginning on November 1st and ending November 30th to allow for aircraft scheduling for the upcoming year. In the event that the initial aircraft acquisition occurs after this day but prior to December 31st, then the annual aircraft scheduling for the upcoming year will be for thirty (30) days following the closing of the initial acquisition scheduling window (as described in Section 1.A). If there is less than thirty (30) days remaining in the year, annual aircraft scheduling for upcoming year will be integrated into the initial acquisition scheduling window.
+2. When the scheduling window opens, the scheduling order will be determined by the following rules:
+(1) Highest ownership equity.
+(2) Founder’s Circle members with the highest ownership equity.
+(3) Founder’s Circle members by subscription date (seniority).
+(4) Non-Founder’s Circle members with the highest ownership equity.
+(5) Non-Founder’s Circle members by subscription date (seniority).
+The manager will notify each member electronically when their individual scheduling window will open. Each member will have three (3) days to reserve the aircraft for the upcoming year during their individual scheduling window.
+a) In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft “Waitlist” for the date(s) and times desired. The list order will be determined on a “first come, first serve” basis. Reservations added to the “Waitlist” during the Annual Aircraft Scheduling window are only applicable to the upcoming year.
+Daily Aircraft Scheduling.
+Beginning on January 1st each year at midnight (00:00) in the timezone the aircraft is based (base local time), “Daily Aircraft Scheduling” will begin and will remain open twenty-four (24) hours a day, every day, until December 31st at 23:59 (base local time).
+“Daily Aircraft Scheduling” will be on a “first come, first serve” basis.
+In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft “Waitlist” for the date(s) and times desired. The list order will be determined on a “first come, first serve” basis. Reservations added to the “Waitlist” via the Daily Aircraft Scheduling process are only valid for the current year.
+Cancellations & MODIFICATIONS.
+CANCELLATIONS: The following cancellation rules and fees are only apply when another owner has “Waitlisted” for the same (or overlapping) dates of the reservation.
+Cancellations may be made to a reservation up to forty-eight (48) hours prior to the start time of the reservation with no fee assessed.
+All cancellations made by a member within forty-eight (48) hours prior to the start time of their reservation will be charged a late cancellation fee (see SECTION 5).
+For cancellations that occur within forty-eight (48) hours up to twenty-four (24) hours prior to the start time of the reservation:
+Two hundred fifty ($250) US dollars.
+For cancellations that occur within twenty (24) hours up to (6) hours prior to the start time of the reservation:
+Five hundred ($500) US dollars.
+For cancellations that occur within six (6) hours up to the start time of the reservation:
+One thousand five hundred ($1500) US dollars.
+Modifications can be made to a reservation provided:
+The modification does not affect another member’s reservation.
+A shortened reservation complies with the cancellation policy (as described above) for the day(s) cancelled from the modified reservation. However, in the event the “waitlisted” owner agrees to accept the aircraft as a result of the shortened modification, the cancellation policy does not apply.
+MANAGER RESPONSIBILITIES.
+The manager will maintain access and control of the aircraft when it is not under the control and/or use by a member.
+All aircraft access and control by the manager for aircraft management purposes is not subject to the policies of this section.
+The manager will transfer access and control of the aircraft to a member, either directly or indirectly, by the start time of their reservation.
+MEMBER RESPONSIBILITIES.
+Members will transfer control of the aircraft to the manager, either directly or indirectly, at the conclusion of their reservation.
+Aircraft Operation & Use
+Members are entitled to use the aircraft within the scheduled “footprint” of the reservation that is made.
+While in possession of the aircraft, members will maintain control, operationally or otherwise, in accordance with FAR Part 91. Additionally, if the member is a lessee, the terms of the lesses’s dry lease agreement.
+The manager will not provide operational planning and execution of any nature.
+For other than described above, the manager will assist members as necessary.
+AIRCRAFT DELIVERY.
+The manager will deliver the aircraft at the member’s reservation time at a mutually agreed upon location acceptable to the member and the manager.
+All delivery costs associated with repositioning the aircraft to a location other than the location where it was last returned are the responsibility of the member.
+All operational planning, control, and costs are the responsibility of the member requesting the aircraft reposition.
+All costs related to the aircraft reposition will be paid by the member.
+Any reposition costs that are a result of aircraft maintenance (scheduled or unscheduled) will be paid from the aircraft LLCs Ownership Fee Account (as applicable). For leases, costs will be paid by the lessee for unscheduled maintenance caused by the lessee.
+Other than for operational planning and control purposes, the manager will assist members, as necessary.
+Unless otherwise stipulated by the member (see below), the aircraft will be delivered with the following fuel level:
+SR22T: 60 gals. (Tabs)
+SF50: *** TBD ***
+All aircraft will be fueled to the levels indicated above, UNLESS:
+A member who wishes for the aircraft to be delivered with a fuel load GREATER than indicated above must inform the manager prior to the start of their reservation.
+A member who wishes for the aircraft to be delivered with a fuel load LESS than indicated above must inform the manager AS SOON AS POSSIBLE, but no later than two (2) hours prior to the start of their reservation. While the manager will make every effort to deliver the aircraft with the lower fuel level requested. However, if the aircraft returned from the previous reservation with a fuel level higher than the requested fuel level, the manager may not be able to accommodate the request.
+AIRCRAFT OPERATION.
+Members are expected to operate the aircraft in accordance with the policies, procedures, and limitations outlined and detailed in the Cirrus Aircraft Pilot’s Operating Handbook (POH). Failure to operate the aircraft as prescribed or in a manner deemed “careless and reckless”, may result in fees and/or penalties up to and including loss of aircraft access and removal from the program.
+In addition to complying with the policies outlined above, members will consider the maximum operational cruise power setting to be 75% power (based on the cruise performance data in Section 5 of the POH). This has been set by the Manager for engine longevity. This is only a cruise policy. Takeoff, Full Power Climb Rich of peak Technique, and Cruise Climb Lean of Peak Technique are expected and allowed. Failure to comply with this policy will result in excessive engine cruise penalty of $50 per hour for the entire duration of the cruise segment greater than 75% power to account for the higher engine wear.
+SF50. *** TBD ***
+AIRCRAFT RETURN.
+Members will return the aircraft to a mutually agreed upon location acceptable to the member and the manager.
+If the member suspects that they will not be able to return the aircraft by the end of their reservation. They will IMMEDIATELY inform the manager. Failure to inform the manager may result in monetary penalties.
+Late returns that are the result of an UNAVAILABLE OPERATIONAL STATUS (as described in SECTION 6), that are out of control of the member will not result in any penalties. For all other reasons, late returns are subject to the following penalties:
+A late return that affects another member’s reservation:
+$100 per hour for each hour late, beginning at the start of the affected member’s reservation time, not to exceed $500 per day.
+For example, a late return that encroaches on another member’s reservation for three hours would result in a penalty of $300. While a late return that extends beyond the first day that returns at any time on the second day would result in a $1000 penalty.
+A late return that does not affect another member’s reservation:
+No penalty will be assessed as long as the manager is informed prior to the delay. In this case, the reservation will be extended to account for the delay.
+If the manager is not informed of the delay, each member will have a one (1) hour grace period from the end of their reservation upon which to return the aircraft. After the grace period expires, the member will be assessed a penalty of $50 per hour, not to exceed $250 per day.
+For example, an aircraft returned three hours late would result in a penalty of $100. While a late return that extends into a second day and returns at any time on the second day would result in a $500 penalty.
+Unless otherwise stipulated, the aircraft will be fueled to the following level upon return:
+SR22T: 60 gals. (Tabs)
+SF50: *** TBD ***
+If the aircraft is returned with a fuel level greater than the level indicated above, the aircraft will not be fueled.
+Aircraft fueling will be accomplished (or directed) by the manager upon return.
+Members will only be billed for the fuel required to bring the fuel level up to the level indicated above.
+Assessment of Fees/Penalties
+Unless otherwise stated below, all fees/penalties incurred by a member, will be paid to the manager.
+Each member’s annual program fee will be based on each member’s ownership percentage. Not applicable to Lessees.
+Cancellation fees will be paid to the aircraft LLC’s operating account.
+Operational Policy violation fees will be paid to the manager unless the violation resulted in aircraft damage. In that case, additional fees to cover the damage will be paid to the aircraft LLC’s operating account.
+Excessive Engine Cruise fees will be paid to the aircraft LLC’s operating account.
+Late Return penalties will be paid to the affected member who’s reservation was encroached upon. Otherwise, if assessed, where no member’s reservation was affected, paid to the manager.
+Unless otherwise stated below, all fees/penalties incurred by the manager, while exercising its member privileges, will be paid into the aircraft LLC’s operating account.
+The manager’s annual ownership fee will be based on the manager’s ownership percentage.
+Cancellation fees.
+Operational Policy violations and violations that result in aircraft damage will be paid to the aircraft LLC’s operating account. The manager will self disclose all such violations to the members with the resultant fees assessed.
+Excessive Engine Cruise penalties will be paid to the aircraft LLC’s operating account.
+Late Return penalties will be paid to the affected member who’s reservation was encroached upon. Otherwise, if assessed, where no member’s reservation was affected, paid directly to LLC’s operating account.
+Any member (other than lessees) can request an independent audit in order to verify all manager fees have been handled in accordance with this policy.
+Aircraft Operational Status
+The aircraft is available for use by members.
+The aircraft is not available for use by members due to (but not limited to):
+Maintenance (planned or unplanned).
+National Airspace closure, full or partial, that directly effects the members ability to operate the aircraft.
+“Act of God”, other than weather.
+International Operations
+Once the member aircraft is registered with the United States Customs and Border Patrol (CBP) and has a current CBP sticker, members are permitted to operate the aircraft to the following countries to/from the United States of America:
+For all reservations that will include an international stop(s), the member will list each international stop(s) in the aircraft scheduling and reservation application with all applicable Electronic Advance Passenger Information Service (eAPIS) information.
+Operations to countries not listed above require prior approval of the manager. Additionally, due to insurance policy restrictions there may be an additional cost to the member associated with changes to insurance policy to add a country (or countries) not listed.
+Other than for operational planning and control purposes, the manager will assist members, as necessary.
