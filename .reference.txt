@@ -35,7 +35,7 @@ Beginning on January 1st each year at midnight (00:00) in the timezone the aircr
 “Daily Aircraft Scheduling” will be on a “first come, first serve” basis.
 In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. The list order will be determined on a “first come, first serve” basis. Reservations added to the waitlist via the Daily Aircraft Scheduling process are only valid for the current year. Waitlist reservations are added in the same way a normal reservation is added. However, choose “Waitlist” from the reservation types in the the dropdown menu when adding the reservation.
 Cancellations & MODIFICATIONS.
-CANCELLATIONS: The following cancellation rules and fees are only apply when another owner has “Waitlisted” for the same (or overlapping) dates of the reservation.
+CANCELLATIONS: The following cancellation rules and fees only apply when another owner has “Waitlisted” for the same (or overlapping) dates of the reservation. All cancellations that are the result of an “Unavailable” aircraft status are not subject to the following rules.
 Cancellations may be made to a reservation up to forty-eight (48) hours prior to the start time of the reservation with no fee assessed.
 All cancellations made by a member within forty-eight (48) hours prior to the start time of their reservation will be charged a late cancellation fee (see SECTION 5).
 For cancellations that occur within forty-eight (48) hours up to twenty-four (24) hours prior to the start time of the reservation:
