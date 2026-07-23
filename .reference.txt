@@ -28,7 +28,9 @@ Not applicable to lessees.
 (3) Founder’s Circle members by subscription date (seniority).
 (4) Non-Founder’s Circle members with the highest ownership equity.
 (5) Non-Founder’s Circle members by subscription date (seniority).
-The manager will notify each member electronically when their individual scheduling window will open. Each member will have three (3) days to reserve the aircraft for the upcoming year during their individual scheduling window.
+The manager will notify each member electronically when their individual scheduling window will open.
+(1) Each member share will have one and a half (1.5) days to reserve the aircraft for the upcoming year during their scheduling window.
+(1) Each member will have three (3) days to reserve the aircraft for the upcoming year during their scheduling window.
 a) In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. The list order will be determined on a “first come, first serve” basis. Reservations added to the waitlist during the Annual Aircraft Scheduling window are only applicable to the upcoming year. Waitlist reservations are added in the same way a normal reservation is added. However, choose “Waitlist” from the reservation types in the the dropdown menu when adding the reservation.
 Daily Aircraft Scheduling.
 Beginning on January 1st each year at midnight (00:00) in the timezone the aircraft is based (base local time), “Daily Aircraft Scheduling” will begin and will remain open twenty-four (24) hours a day, every day, until December 31st at 23:59 (base local time).
