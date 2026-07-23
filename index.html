@@ -806,6 +806,11 @@ document.addEventListener('click', function(e){
     var y = window.scrollY + 100;
     var active = 0;
     sections.forEach(function(s,i){ if(s && s.offsetTop <= y) active = i; });
+    // Bottom-of-page: the last section may be too short to ever reach the
+    // scroll threshold, so force it active once we've scrolled to the bottom.
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+      active = sections.length - 1;
+    }
     links.forEach(function(l,i){ l.classList.toggle('active', i === active); });
   }
   window.addEventListener('scroll', onScroll, {passive:true});
