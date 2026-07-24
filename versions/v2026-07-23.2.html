@@ -454,8 +454,7 @@ const VERSIONS = [
   { version: 'v2026-07-22.1', label: 'Added Cirrus FOM reference and flight-data monitoring language', archived: 'versions/v2026-07-22.1.html' },
   { version: 'v2026-07-22.2', label: 'Cancellation rules exclude Unavailable aircraft status', archived: 'versions/v2026-07-22.2.html' },
   { version: 'v2026-07-23.1', label: 'Annual scheduling window: per-aircraft (SR22T 1.5 days/share, SF50 3 days)', archived: 'versions/v2026-07-23.1.html' },
-  { version: 'v2026-07-23.2', label: 'International Ops: permitted destinations now countries (or regions)', archived: 'versions/v2026-07-23.2.html' },
-  { version: 'v2026-07-24.1', label: 'Terminology sweep: aircraft's operating account, ownership equity, purchase date, FAA-registration aircraft definition', archived: null },
+  { version: 'v2026-07-23.2', label: 'International Ops: permitted destinations now countries (or regions)', archived: null },
 ];
 const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
 </script>
@@ -532,7 +531,7 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
     <!-- 1. Definitions -->
     <section class="guide-section" id="definitions">
       <h2>1. Definitions</h2>
-      <p class="changed"><strong>Aircraft:</strong> The specific aircraft owned by the member documented on the filed FAA aircraft registration.</p>
+      <p><strong>Aircraft:</strong> The specific aircraft owned by the member documented on the filed FAA aircraft registration.</p>
       <p><strong>Base:</strong> The physical location the aircraft is stored when not in possession of a member.</p>
       <p><strong>Trip:</strong> All planned or actual points of takeoff and/or landing, originating at the location where the member took possession of the aircraft, and ending at the last point of landing, planned or actual, prior to transferring possession of the aircraft.</p>
       <p><strong>Reservation:</strong> The scheduled length of time a member will possess the aircraft.</p>
@@ -554,7 +553,7 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
       <div class="callout note"><div class="callout-icon">ℹ️</div><p><em>Not applicable to lessees.</em></p></div>
       <ol>
         <li>The first date available for aircraft usage will be the projected acquisition date of the aircraft plus seven (7) days. The manager will notify members if the planned acquisition date changes.</li>
-        <li class="changed">When the scheduling window opens, the scheduling order will be determined by members' aircraft ownership equity, highest to lowest. When ownership equity is the same, scheduling order will be determined by the date at which the member purchased their ownership equity (seniority). The manager will notify each member electronically when their scheduling window will open and close.</li>
+        <li>When the scheduling window opens, the scheduling order will be determined by members' aircraft ownership equity, highest to lowest. When ownership equity is the same, scheduling order will be determined by the date at which the member purchased their ownership equity (seniority). The manager will notify each member electronically when their scheduling window will open and close.</li>
         <li><strong>Waitlist:</strong> In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. The list order will be determined on a "first come, first serve" basis. Reservations added to the waitlist during the scheduling window are only valid for the remainder of the year. Waitlist reservations are added in the same way a normal reservation is added. However, choose "Waitlist" from the reservation types in the dropdown menu when adding the reservation.</li>
       </ol>
 
@@ -566,9 +565,9 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
           <ol>
             <li>Highest ownership equity.</li>
             <li>Founder's Circle members with the highest ownership equity.</li>
-            <li class="changed">Founder's Circle members by purchase date (seniority).</li>
+            <li>Founder's Circle members by purchase date (seniority).</li>
             <li>Non-Founder's Circle members with the highest ownership equity.</li>
-            <li class="changed">Non-Founder's Circle members by purchase date (seniority).</li>
+            <li>Non-Founder's Circle members by purchase date (seniority).</li>
           </ol>
           <p style="margin-top:10px;">The manager will notify each member electronically when their individual scheduling window will open.</p>
           <ol type="a">
@@ -638,7 +637,7 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
       <ul>
         <li>All delivery costs associated with repositioning the aircraft to a location other than the location where it was last returned are the responsibility of the member.</li>
         <li>All operational planning, control, and costs are the responsibility of the member requesting the aircraft reposition.</li>
-        <li class="changed">Any reposition costs that are a result of aircraft maintenance (scheduled or unscheduled) will be paid from the aircraft's operating account. For leases, costs will be paid by the lessee for unscheduled maintenance caused by the lessee.</li>
+        <li>Any reposition costs that are a result of aircraft maintenance (scheduled or unscheduled) will be paid from the aircraft's operating account. For leases, costs will be paid by the lessee for unscheduled maintenance caused by the lessee.</li>
       </ul>
 
       <h3>Fuel Level at Delivery</h3>
@@ -706,20 +705,20 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
       <h3>Fees Incurred by a Member</h3>
       <p>Unless otherwise stated, all fees/penalties incurred by a member will be paid to the manager.</p>
       <ul>
-        <li class="changed">Each member's annual program fee will be based on each member's ownership equity. <em>Not applicable to Lessees.</em></li>
-        <li class="changed">Cancellation fees will be paid to the aircraft's operating account.</li>
-        <li class="changed">Operational Policy violation fees will be paid to the manager unless the violation resulted in aircraft damage — in that case, additional fees to cover the damage will be paid to the aircraft's operating account.</li>
-        <li class="changed">Excessive Engine Cruise fees will be paid to the aircraft's operating account.</li>
-        <li class="changed">Late Return penalties will be paid to the affected member whose reservation was encroached upon. Otherwise, if assessed where no member's reservation was affected, paid to the manager.</li>
+        <li>Each member's annual program fee will be based on each member's ownership equity. <em>Not applicable to Lessees.</em></li>
+        <li>Cancellation fees will be paid to the aircraft's operating account.</li>
+        <li>Operational Policy violation fees will be paid to the manager unless the violation resulted in aircraft damage — in that case, additional fees to cover the damage will be paid to the aircraft's operating account.</li>
+        <li>Excessive Engine Cruise fees will be paid to the aircraft's operating account.</li>
+        <li>Late Return penalties will be paid to the affected member whose reservation was encroached upon. Otherwise, if assessed where no member's reservation was affected, paid to the manager.</li>
       </ul>
 
       <h3>Fees Incurred by the Manager</h3>
-      <p class="changed">Unless otherwise stated, all fees/penalties incurred by the manager while exercising its member privileges will be paid into the aircraft's operating account.</p>
+      <p>Unless otherwise stated, all fees/penalties incurred by the manager while exercising its member privileges will be paid into the aircraft's operating account.</p>
       <ul>
-        <li class="changed">Cancellation fees — paid to the aircraft's operating account.</li>
-        <li class="changed">Operational Policy violations and violations that result in aircraft damage will be paid to the aircraft's operating account. The manager will self-disclose all such violations to the members with the resultant fees assessed.</li>
-        <li class="changed">Excessive Engine Cruise penalties will be paid to the aircraft's operating account.</li>
-        <li class="changed">Late Return penalties will be paid to the affected member whose reservation was encroached upon. Otherwise, if assessed where no member's reservation was affected, paid directly to the aircraft's operating account.</li>
+        <li>Cancellation fees — paid to the aircraft's operating account.</li>
+        <li>Operational Policy violations and violations that result in aircraft damage will be paid to the aircraft's operating account. The manager will self-disclose all such violations to the members with the resultant fees assessed.</li>
+        <li>Excessive Engine Cruise penalties will be paid to the aircraft's operating account.</li>
+        <li>Late Return penalties will be paid to the affected member whose reservation was encroached upon. Otherwise, if assessed where no member's reservation was affected, paid directly to the aircraft's operating account.</li>
       </ul>
 
       <div class="callout tip"><div class="callout-icon">ℹ️</div><p>Any member (other than lessees) can request an independent audit in order to verify all manager fees have been handled in accordance with this policy.</p></div>
