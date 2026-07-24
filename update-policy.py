@@ -159,7 +159,11 @@ def update_versions_array(html, old_version, new_version, label):
         flags=re.DOTALL
     )
     # Append new entry before closing ];
-    new_entry = f"  {{ version: '{new_version}', label: '{label}', archived: null }},\n"
+    # Escape for a single-quoted JS string literal — an apostrophe in the label
+    # (e.g. "aircraft's operating account") otherwise breaks the whole <script>
+    # block, blanking the version badge and history dropdown.
+    js_label = label.replace('\\', '\\\\').replace("'", "\\'")
+    new_entry = f"  {{ version: '{new_version}', label: '{js_label}', archived: null }},\n"
     html = re.sub(r'(\];\s*\nconst CURRENT_VERSION)', new_entry + r'\1', html)
     return html
 
