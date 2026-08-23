@@ -455,8 +455,7 @@ const VERSIONS = [
   { version: 'v2026-07-22.2', label: 'Cancellation rules exclude Unavailable aircraft status', archived: 'versions/v2026-07-22.2.html' },
   { version: 'v2026-07-23.1', label: 'Annual scheduling window: per-aircraft (SR22T 1.5 days/share, SF50 3 days)', archived: 'versions/v2026-07-23.1.html' },
   { version: 'v2026-07-23.2', label: 'International Ops: permitted destinations now countries (or regions)', archived: 'versions/v2026-07-23.2.html' },
-  { version: 'v2026-07-24.1', label: 'Terminology sweep: aircraft\'s operating account, ownership equity, purchase date, FAA-registration aircraft definition', archived: 'versions/v2026-07-24.1.html' },
-  { version: 'v2026-08-23.1', label: 'Waitlist: Backup reservation instructions; removed year-validity limits on Annual and Daily waitlist entries', archived: null },
+  { version: 'v2026-07-24.1', label: 'Terminology sweep: aircraft\'s operating account, ownership equity, purchase date, FAA-registration aircraft definition', archived: null },
 ];
 const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
 </script>
@@ -524,7 +523,7 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
     <!-- Hero -->
     <div class="hero">
       <h1>Aircraft Ownership Programs<br><span>Scheduling and Use Policies</span></h1>
-      <p>These policies govern the expectations and responsibilities of <strong>BOP AERO SERVICES LLC</strong> (the "Manager") and the Members of any BOP AERO Program Aircraft (the "Members") regarding the scheduling and use of the aircraft.</p>
+      <p class="changed">These policies govern the expectations and responsibilities of <strong>BOP AERO SERVICES LLC</strong> (the "Manager") and the Members of any BOP AERO Program Aircraft (the "Members") regarding the scheduling and use of the aircraft.</p>
       <div class="hero-meta">
         <div class="change-legend"><div class="change-legend-bar"></div> Changed in this version</div>
       </div>
@@ -533,7 +532,7 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
     <!-- 1. Definitions -->
     <section class="guide-section" id="definitions">
       <h2>1. Definitions</h2>
-      <p><strong>Aircraft:</strong> The specific aircraft owned by the member documented on the filed FAA aircraft registration.</p>
+      <p class="changed"><strong>Aircraft:</strong> The specific aircraft owned by the member documented on the filed FAA aircraft registration.</p>
       <p><strong>Base:</strong> The physical location the aircraft is stored when not in possession of a member.</p>
       <p><strong>Trip:</strong> All planned or actual points of takeoff and/or landing, originating at the location where the member took possession of the aircraft, and ending at the last point of landing, planned or actual, prior to transferring possession of the aircraft.</p>
       <p><strong>Reservation:</strong> The scheduled length of time a member will possess the aircraft.</p>
@@ -555,8 +554,8 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
       <div class="callout note"><div class="callout-icon">ℹ️</div><p><em>Not applicable to lessees.</em></p></div>
       <ol>
         <li>The first date available for aircraft usage will be the projected acquisition date of the aircraft plus seven (7) days. The manager will notify members if the planned acquisition date changes.</li>
-        <li>When the scheduling window opens, the scheduling order will be determined by members' aircraft ownership equity, highest to lowest. When ownership equity is the same, scheduling order will be determined by the date at which the member purchased their ownership equity (seniority). The manager will notify each member electronically when their scheduling window will open and close.</li>
-        <li class="changed"><strong>Waitlist:</strong> In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. The list order will be determined on a "first come, first serve" basis. Reservations added to the waitlist during the scheduling window are only valid for the remainder of the year. Waitlist (or Backup) reservations are added in the same way a normal reservation is added. However, the scheduler will not allow two normal reservations to overlap. To solve this, click the "Make Backup" button to add the Backup reservation. The waitlisted reservation will be displayed as a "Backup" reservation on the schedule.</li>
+        <li class="changed">When the scheduling window opens, the scheduling order will be determined by members' aircraft ownership equity, highest to lowest. When ownership equity is the same, scheduling order will be determined by the date at which the member purchased their ownership equity (seniority). The manager will notify each member electronically when their scheduling window will open and close.</li>
+        <li><strong>Waitlist:</strong> In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. The list order will be determined on a "first come, first serve" basis. Reservations added to the waitlist during the scheduling window are only valid for the remainder of the year. Waitlist reservations are added in the same way a normal reservation is added. However, choose "Waitlist" from the reservation types in the dropdown menu when adding the reservation.</li>
       </ol>
 
       <h3>C. Annual Aircraft Scheduling</h3>
@@ -567,9 +566,9 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
           <ol>
             <li>Highest ownership equity.</li>
             <li>Founder's Circle members with the highest ownership equity.</li>
-            <li>Founder's Circle members by purchase date (seniority).</li>
+            <li class="changed">Founder's Circle members by purchase date (seniority).</li>
             <li>Non-Founder's Circle members with the highest ownership equity.</li>
-            <li>Non-Founder's Circle members by purchase date (seniority).</li>
+            <li class="changed">Non-Founder's Circle members by purchase date (seniority).</li>
           </ol>
           <p style="margin-top:10px;">The manager will notify each member electronically when their individual scheduling window will open.</p>
           <ol type="a">
@@ -577,13 +576,13 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
             <li><strong>SF50:</strong> Each member will have three (3) days to reserve the aircraft for the upcoming year during their scheduling window.</li>
           </ol>
         </li>
-        <li class="changed"><strong>Waitlist:</strong> In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. The list order will be determined on a "first come, first serve" basis. Waitlist (or Backup) reservations are added in the same way a normal reservation is added. However, the scheduler will not allow two normal reservations to overlap. To solve this, click the "Make Backup" button to add the Backup reservation. The waitlisted reservation will be displayed as a "Backup" reservation on the schedule.</li>
+        <li><strong>Waitlist:</strong> In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. The list order will be determined on a "first come, first serve" basis. Reservations added to the waitlist during the Annual Aircraft Scheduling window are only applicable to the upcoming year. Waitlist reservations are added in the same way a normal reservation is added. However, choose "Waitlist" from the reservation types in the dropdown menu when adding the reservation.</li>
       </ol>
 
       <h3>D. Daily Aircraft Scheduling</h3>
       <p>Beginning on <strong>January 1st</strong> each year at midnight (00:00) in the timezone the aircraft is based (base local time), "Daily Aircraft Scheduling" will begin and will remain open twenty-four (24) hours a day, every day, until December 31st at 23:59 (base local time).</p>
       <p>"Daily Aircraft Scheduling" will be on a "first come, first serve" basis.</p>
-      <p class="changed"><strong>Waitlist:</strong> In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. The list order will be determined on a "first come, first serve" basis. Waitlist (or Backup) reservations are added in the same way a normal reservation is added. However, the scheduler will not allow two normal reservations to overlap. To solve this, click the "Make Backup" button to add the Backup reservation. The waitlisted reservation will be displayed as a "Backup" reservation on the schedule.</p>
+      <p><strong>Waitlist:</strong> In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. Reservations added to the waitlist via the Daily Aircraft Scheduling process are only valid for the current year. Waitlist reservations are added in the same way a normal reservation is added. However, choose "Waitlist" from the reservation types in the dropdown menu when adding the reservation.</p>
 
       <h3>E. Cancellations &amp; Modifications</h3>
 
@@ -639,7 +638,7 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
       <ul>
         <li>All delivery costs associated with repositioning the aircraft to a location other than the location where it was last returned are the responsibility of the member.</li>
         <li>All operational planning, control, and costs are the responsibility of the member requesting the aircraft reposition.</li>
-        <li>Any reposition costs that are a result of aircraft maintenance (scheduled or unscheduled) will be paid from the aircraft's operating account. For leases, costs will be paid by the lessee for unscheduled maintenance caused by the lessee.</li>
+        <li class="changed">Any reposition costs that are a result of aircraft maintenance (scheduled or unscheduled) will be paid from the aircraft's operating account. For leases, costs will be paid by the lessee for unscheduled maintenance caused by the lessee.</li>
       </ul>
 
       <h3>Fuel Level at Delivery</h3>
@@ -707,20 +706,20 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
       <h3>Fees Incurred by a Member</h3>
       <p>Unless otherwise stated, all fees/penalties incurred by a member will be paid to the manager.</p>
       <ul>
-        <li>Each member's annual program fee will be based on each member's ownership equity. <em>Not applicable to Lessees.</em></li>
-        <li>Cancellation fees will be paid to the aircraft's operating account.</li>
-        <li>Operational Policy violation fees will be paid to the manager unless the violation resulted in aircraft damage — in that case, additional fees to cover the damage will be paid to the aircraft's operating account.</li>
-        <li>Excessive Engine Cruise fees will be paid to the aircraft's operating account.</li>
+        <li class="changed">Each member's annual program fee will be based on each member's ownership equity. <em>Not applicable to Lessees.</em></li>
+        <li class="changed">Cancellation fees will be paid to the aircraft's operating account.</li>
+        <li class="changed">Operational Policy violation fees will be paid to the manager unless the violation resulted in aircraft damage — in that case, additional fees to cover the damage will be paid to the aircraft's operating account.</li>
+        <li class="changed">Excessive Engine Cruise fees will be paid to the aircraft's operating account.</li>
         <li>Late Return penalties will be paid to the affected member whose reservation was encroached upon. Otherwise, if assessed where no member's reservation was affected, paid to the manager.</li>
       </ul>
 
       <h3>Fees Incurred by the Manager</h3>
-      <p>Unless otherwise stated, all fees/penalties incurred by the manager while exercising its member privileges will be paid into the aircraft's operating account.</p>
+      <p class="changed">Unless otherwise stated, all fees/penalties incurred by the manager while exercising its member privileges will be paid into the aircraft's operating account.</p>
       <ul>
-        <li>Cancellation fees — paid to the aircraft's operating account.</li>
-        <li>Operational Policy violations and violations that result in aircraft damage will be paid to the aircraft's operating account. The manager will self-disclose all such violations to the members with the resultant fees assessed.</li>
-        <li>Excessive Engine Cruise penalties will be paid to the aircraft's operating account.</li>
-        <li>Late Return penalties will be paid to the affected member whose reservation was encroached upon. Otherwise, if assessed where no member's reservation was affected, paid directly to the aircraft's operating account.</li>
+        <li class="changed">Cancellation fees — paid to the aircraft's operating account.</li>
+        <li class="changed">Operational Policy violations and violations that result in aircraft damage will be paid to the aircraft's operating account. The manager will self-disclose all such violations to the members with the resultant fees assessed.</li>
+        <li class="changed">Excessive Engine Cruise penalties will be paid to the aircraft's operating account.</li>
+        <li class="changed">Late Return penalties will be paid to the affected member whose reservation was encroached upon. Otherwise, if assessed where no member's reservation was affected, paid directly to the aircraft's operating account.</li>
       </ul>
 
       <div class="callout tip"><div class="callout-icon">ℹ️</div><p>Any member (other than lessees) can request an independent audit in order to verify all manager fees have been handled in accordance with this policy.</p></div>
@@ -747,7 +746,7 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
     <section class="guide-section" id="international">
       <h2>7. International Operations</h2>
 
-      <p>Once the member aircraft is registered with the United States Customs and Border Patrol (CBP) and has a current CBP sticker, members are permitted to operate the aircraft to the following country (or countries and/or regions) to/from the United States of America:</p>
+      <p class="changed">Once the member aircraft is registered with the United States Customs and Border Patrol (CBP) and has a current CBP sticker, members are permitted to operate the aircraft to the following country (or countries and/or regions) to/from the United States of America:</p>
       <ul>
         <li>Canada</li>
         <li>Caribbean</li>
