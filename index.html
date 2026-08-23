@@ -274,6 +274,22 @@ nav::-webkit-scrollbar-thumb { background:var(--border-bright); }
 .fee-table td:first-child { color:var(--text); font-weight:500; }
 .fee-table tr:last-child td { border-bottom:none; }
 
+/* FRAMED RULE LIST */
+.rule-box {
+  background:var(--surface2);
+  border:1px solid var(--border-bright);
+  border-radius:8px;
+  padding:14px 20px 14px 10px;
+  margin:12px 0 16px;
+}
+.rule-box > ol { margin:0; padding-left:24px; }
+.rule-box > ol > li:last-child { margin-bottom:0; }
+.rule-box-title {
+  font-family:var(--mono); font-size:11px; letter-spacing:1px;
+  text-transform:uppercase; color:var(--text-muted);
+  margin:0 0 10px 10px;
+}
+
 /* BADGE */
 .badge {
   display:inline-block; padding:1px 8px; border-radius:4px;
@@ -324,6 +340,8 @@ nav::-webkit-scrollbar-thumb { background:var(--border-bright); }
 
 /* MOBILE */
 @media (max-width:800px) {
+  .rule-box { padding:12px 14px 12px 6px; }
+  .rule-box > ol { padding-left:22px; }
   nav { display:none; }
   .content { padding:24px 20px 60px; }
   .hero { padding:20px; }
@@ -417,6 +435,8 @@ nav::-webkit-scrollbar-thumb { background:var(--border-bright); }
   .callout p { font-size:10pt; }
 
   .fee-table { font-size:10pt; }
+  .rule-box { background:#f4f4f4; border:1px solid #bbbbbb; }
+  .rule-box-title { color:#555555; }
   .fee-table th { background:#eeeeee; }
 
   /* Change bar — keep visible in print */
@@ -564,13 +584,16 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
       <ol>
         <li>Each year there will be a thirty-one (31) day window beginning on <strong>November 1st</strong> and ending <strong>November 30th</strong> to allow for aircraft scheduling for the upcoming year. In the event that the initial aircraft acquisition occurs after this day but prior to December 31st, then the annual aircraft scheduling for the upcoming year will be for thirty (30) days following the close of the initial acquisition scheduling window. If there is less than thirty (30) days remaining in the year, annual aircraft scheduling for the upcoming year will be integrated into the initial acquisition scheduling window.</li>
         <li>When the scheduling window opens, the scheduling order will be determined by the following rules:
-          <ol>
-            <li>Highest ownership equity.</li>
-            <li>Founder's Circle members with the highest ownership equity.</li>
-            <li>Founder's Circle members by purchase date (seniority).</li>
-            <li>Non-Founder's Circle members with the highest ownership equity.</li>
-            <li>Non-Founder's Circle members by purchase date (seniority).</li>
-          </ol>
+          <div class="rule-box">
+            <p class="rule-box-title">Scheduling Order</p>
+            <ol>
+              <li>Highest ownership equity.</li>
+              <li>Founder's Circle members with the highest ownership equity.</li>
+              <li>Founder's Circle members by purchase date (seniority).</li>
+              <li>Non-Founder's Circle members with the highest ownership equity.</li>
+              <li>Non-Founder's Circle members by purchase date (seniority).</li>
+            </ol>
+          </div>
           <p style="margin-top:10px;">The manager will notify each member electronically when their individual scheduling window will open.</p>
           <ol type="a">
             <li><strong>SR22T:</strong> Each member share will have one and a half (1.5) days to reserve the aircraft for the upcoming year during their scheduling window.</li>
