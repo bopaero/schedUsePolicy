@@ -477,8 +477,7 @@ const VERSIONS = [
   { version: 'v2026-07-23.2', label: 'International Ops: permitted destinations now countries (or regions)', archived: 'versions/v2026-07-23.2.html' },
   { version: 'v2026-07-24.1', label: 'Terminology sweep: aircraft\'s operating account, ownership equity, purchase date, FAA-registration aircraft definition', archived: 'versions/v2026-07-24.1.html' },
   { version: 'v2026-08-23.1', label: 'Waitlist: Backup reservation instructions; removed year-validity limits on Annual and Daily waitlist entries', archived: 'versions/v2026-08-23.1.html' },
-  { version: 'v2026-09-06.1', label: 'Lessee Minimum Daily Charge; Hobbs and Flight meter definitions; Use day clarified', archived: 'versions/v2026-09-06.1.html' },
-  { version: 'v2026-09-06.2', label: 'Living document statement: policy is revised periodically and current version supersedes prior versions', archived: null },
+  { version: 'v2026-09-06.1', label: 'Lessee Minimum Daily Charge; Hobbs and Flight meter definitions; Use day clarified', archived: null },
 ];
 const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
 </script>
@@ -561,10 +560,10 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
       <p><strong>Trip:</strong> All planned or actual points of takeoff and/or landing, originating at the location where the member took possession of the aircraft, and ending at the last point of landing, planned or actual, prior to transferring possession of the aircraft.</p>
       <p><strong>Reservation:</strong> The scheduled length of time a member will possess the aircraft.</p>
       <p><strong>Leg:</strong> The period of time and distance an aircraft operates between a departure point and a landing point.</p>
-      <p><strong>Hobbs meter:</strong> The instrument that records aircraft time from engine start to engine shutdown.</p>
-      <p><strong>Flight meter:</strong> The instrument that records aircraft time from takeoff to touchdown.</p>
+      <p class="changed"><strong>Hobbs meter:</strong> The instrument that records aircraft time from engine start to engine shutdown.</p>
+      <p class="changed"><strong>Flight meter:</strong> The instrument that records aircraft time from takeoff to touchdown.</p>
       <p><strong>Calendar day:</strong> A twenty-four (24) hour period beginning at 00:00 and ending at 23:59.</p>
-      <p><strong>"Use" day:</strong> Five (5) hours of aircraft time, as measured by the "Flight meter," accrued within a "Calendar day" in the time zone in which the aircraft is located at the start of the day. Used for planning and bookkeeping purposes only — it is not used to assess any fee or penalty, and it has no direct correlation to member usage.</p>
+      <p class="changed"><strong>"Use" day:</strong> Five (5) hours of aircraft time, as measured by the "Flight meter," accrued within a "Calendar day" in the time zone in which the aircraft is located at the start of the day. Used for planning and bookkeeping purposes only — it is not used to assess any fee or penalty, and it has no direct correlation to member usage.</p>
       <p><strong>"Non-use" day:</strong> A planned or unplanned non-usage of the aircraft for a "Calendar day" while a member has possession of the aircraft. Determined by the time zone where the aircraft last terminated operations for the day.</p>
       <p><strong>Member:</strong> Any registered Member of the program and, for the purposes of this Agreement, shall also include any <strong>Lessee</strong>, who shall be entitled to the same rights, privileges, and obligations as a Member unless otherwise specified.</p>
     </section>
@@ -691,7 +690,7 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
       <h4>SR22T — Cruise Power Policy</h4>
       <p>In addition to complying with the policies outlined above, members will consider the maximum operational cruise power setting to be <strong>75% power</strong> (based on the cruise performance data in Section 5 of the POH). This has been set by the Manager for engine longevity.</p>
       <div class="callout note"><div class="callout-icon">ℹ️</div><p><strong>This is only a cruise policy.</strong> Takeoff, Full Power Climb Rich of peak technique, and Cruise Climb Lean of Peak technique are expected and allowed.</p></div>
-      <div class="callout warn "><div class="callout-icon">⚠️</div><p>Failure to comply will result in an <strong>excessive engine cruise penalty fee of $50 per hour</strong> for the entire duration of any cruise segment greater than 75% power, as measured by the "Hobbs meter."</p></div>
+      <div class="callout warn "><div class="callout-icon">⚠️</div><p class="changed">Failure to comply will result in an <strong>excessive engine cruise penalty fee of $50 per hour</strong> for the entire duration of any cruise segment greater than 75% power, as measured by the "Hobbs meter."</p></div>
 
       <h4>SF50</h4>
       <p>TBD</p>
@@ -702,7 +701,7 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
       <h4>Late Return</h4>
       <div class="callout danger"><div class="callout-icon">🚨</div><p>If the member suspects they will not be able to return the aircraft by the end of their reservation, they must <strong>immediately</strong> inform the manager. Failure to inform the manager may result in monetary penalties.</p></div>
       <p>Late returns resulting from an Unavailable Operational Status (see <a href="#status">Section 6</a>) that are out of the member's control will not result in any penalties. For all other reasons, late returns are subject to the following:</p>
-      <p>For the purposes of these penalties, hours late are measured as elapsed clock time from the end of the member's reservation. Aircraft time recorded on the "Hobbs meter" is not used to assess late return penalties.</p>
+      <p class="changed">For the purposes of these penalties, hours late are measured as elapsed clock time from the end of the member's reservation. Aircraft time recorded on the "Hobbs meter" is not used to assess late return penalties.</p>
 
       <h4>Late Return — Affects Another Member's Reservation</h4>
       <p>$100 per hour for each hour late, beginning at the start of the affected member's reservation time, not to exceed $500 per day.</p>
@@ -743,16 +742,16 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
         <li>Late Return penalties will be paid to the affected member whose reservation was encroached upon. Otherwise, if assessed where no member's reservation was affected, paid to the manager.</li>
       </ul>
 
-      <h3>Lessee Minimum Daily Charge</h3>
-      <div class="callout note"><div class="callout-icon">ℹ️</div><p><em>Applies to Lessees only.</em></p></div>
-      <p>For any reservation spanning more than two (2) "Calendar days," a Lessee will be charged the <strong>greater of</strong>:</p>
+      <h3 class="changed">Lessee Minimum Daily Charge</h3>
+      <div class="callout note"><div class="callout-icon">ℹ️</div><p class="changed"><em>Applies to Lessees only.</em></p></div>
+      <p class="changed">For any reservation spanning more than two (2) "Calendar days," a Lessee will be charged the <strong>greater of</strong>:</p>
       <ol>
-        <li>Two (2) hours of aircraft time for each "Calendar day" of the reservation; or</li>
-        <li>The actual aircraft time used, as measured by the "Hobbs meter."</li>
+        <li class="changed">Two (2) hours of aircraft time for each "Calendar day" of the reservation; or</li>
+        <li class="changed">The actual aircraft time used, as measured by the "Hobbs meter."</li>
       </ol>
-      <p>Each "Calendar day" on which the Lessee holds the reservation counts as a full day, including partial first and last days. Reservations spanning two (2) "Calendar days" or fewer are charged at the actual time recorded on the "Hobbs meter" with no minimum applied.</p>
-      <p>This charge is paid to the manager.</p>
-      <p><em>Example:</em> a four (4) "Calendar day" reservation with 5.0 hours recorded on the "Hobbs meter" is charged 8.0 hours (2 hours &times; 4 days). The same reservation with 11.3 hours recorded is charged 11.3 hours.</p>
+      <p class="changed">Each "Calendar day" on which the Lessee holds the reservation counts as a full day, including partial first and last days. Reservations spanning two (2) "Calendar days" or fewer are charged at the actual time recorded on the "Hobbs meter" with no minimum applied.</p>
+      <p class="changed">This charge is paid to the manager.</p>
+      <p class="changed"><em>Example:</em> a four (4) "Calendar day" reservation with 5.0 hours recorded on the "Hobbs meter" is charged 8.0 hours (2 hours &times; 4 days). The same reservation with 11.3 hours recorded is charged 11.3 hours.</p>
 
       <h3>Fees Incurred by the Manager</h3>
       <p>Unless otherwise stated, all fees/penalties incurred by the manager while exercising its member privileges will be paid into the aircraft's operating account.</p>
