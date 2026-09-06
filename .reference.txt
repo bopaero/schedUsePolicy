@@ -115,10 +115,10 @@ Lessee Minimum Daily Charge
 Applies to Lessees only.
 For any reservation spanning more than two (2) "Calendar days," a Lessee will be charged the greater of:
 1. Two (2) hours of aircraft time for each "Calendar day" of the reservation; or
-2. The actual aircraft time used, as measured by the Hobbs meter.
-Each "Calendar day" on which the Lessee holds the reservation counts as a full day, including partial first and last days. Reservations spanning two (2) "Calendar days" or fewer are charged at actual Hobbs time with no minimum applied.
+2. The actual aircraft time used, as measured by the "Hobbs meter."
+Each "Calendar day" on which the Lessee holds the reservation counts as a full day, including partial first and last days. Reservations spanning two (2) "Calendar days" or fewer are charged at the actual time recorded on the "Hobbs meter" with no minimum applied.
 This charge is paid to the manager.
-Example: a four (4) "Calendar day" reservation with 5.0 hours of Hobbs time is charged 8.0 hours (2 hours × 4 days). The same reservation with 11.3 hours of Hobbs time is charged 11.3 hours.
+Example: a four (4) "Calendar day" reservation with 5.0 hours recorded on the "Hobbs meter" is charged 8.0 hours (2 hours × 4 days). The same reservation with 11.3 hours recorded is charged 11.3 hours.
 Fees Incurred by the Manager
 Unless otherwise stated, all fees/penalties incurred by the manager while exercising its member privileges will be paid into the aircraft's operating account.
 - Cancellation fees — paid to the aircraft's operating account.
