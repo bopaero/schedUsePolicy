@@ -1,14 +1,14 @@
 Aircraft Ownership Programs — Scheduling and Use Policies
-Aircraft Ownership Programs — Scheduling and Use Policies
 These policies govern the expectations and responsibilities of BOP AERO SERVICES LLC (the "Manager") and the Members of any BOP AERO Program Aircraft (the "Members") regarding the scheduling and use of the aircraft.
-1. Definitions
 Aircraft: The specific aircraft owned by the member documented on the filed FAA aircraft registration.
 Base: The physical location the aircraft is stored when not in possession of a member.
 Trip: All planned or actual points of takeoff and/or landing, originating at the location where the member took possession of the aircraft, and ending at the last point of landing, planned or actual, prior to transferring possession of the aircraft.
 Reservation: The scheduled length of time a member will possess the aircraft.
 Leg: The period of time and distance an aircraft operates between a departure point and a landing point.
+Hobbs meter: The instrument that records aircraft time from engine start to engine shutdown.
+Flight meter: The instrument that records aircraft time from takeoff to touchdown.
 Calendar day: A twenty-four (24) hour period beginning at 00:00 and ending at 23:59.
-"Use" day: Five (5) flight hours measured within a "Calendar day" in the time zone in which the aircraft is located at the start of the day. Used for planning, bookkeeping, and fee purposes only — it has no direct correlation to member usage.
+"Use" day: Five (5) hours of aircraft time, as measured by the "Flight meter," accrued within a "Calendar day" in the time zone in which the aircraft is located at the start of the day. Used for planning and bookkeeping purposes only — it is not used to assess any fee or penalty, and it has no direct correlation to member usage.
 "Non-use" day: A planned or unplanned non-usage of the aircraft for a "Calendar day" while a member has possession of the aircraft. Determined by the time zone where the aircraft last terminated operations for the day.
 Member: Any registered Member of the program and, for the purposes of this Agreement, shall also include any Lessee, who shall be entitled to the same rights, privileges, and obligations as a Member unless otherwise specified.
 2. Aircraft Scheduling
@@ -16,47 +16,46 @@ A. Schedule Management Software
 bop Aero uses Flight Circle to manage each aircraft's schedule. All member new reservations, modifications, and cancellations are managed through the web-based app. The manager will provide all new members access upon entry into an aircraft program. A web-based user guide is provided that can answer most questions regarding use of the software.
 B. Prior to Aircraft Acquisition
 Not applicable to lessees.
-1.  The first date available for aircraft usage will be the projected acquisition date of the aircraft plus seven (7) days. The manager will notify members if the planned acquisition date changes.
-2.  When the scheduling window opens, the scheduling order will be determined by members' aircraft ownership equity, highest to lowest. When ownership equity is the same, scheduling order will be determined by the date at which the member purchased their ownership equity (seniority). The manager will notify each member electronically when their scheduling window will open and close.
-3.  Waitlist: In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. The list order will be determined on a "first come, first serve" basis. Reservations added to the waitlist during the scheduling window are only valid for the remainder of the year. Waitlist (or Backup) reservations are added in the same way a normal reservation is added. However, the scheduler will not allow two normal reservations to overlap. To solve this, click the "Make Backup" button to add the Backup reservation. The waitlisted reservation will be displayed as a "Backup" reservation on the schedule.
+1. The first date available for aircraft usage will be the projected acquisition date of the aircraft plus seven (7) days. The manager will notify members if the planned acquisition date changes.
+2. When the scheduling window opens, the scheduling order will be determined by members' aircraft ownership equity, highest to lowest. When ownership equity is the same, scheduling order will be determined by the date at which the member purchased their ownership equity (seniority). The manager will notify each member electronically when their scheduling window will open and close.
+3. Waitlist: In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. The list order will be determined on a "first come, first serve" basis. Reservations added to the waitlist during the scheduling window are only valid for the remainder of the year. Waitlist (or Backup) reservations are added in the same way a normal reservation is added. However, the scheduler will not allow two normal reservations to overlap. To solve this, click the "Make Backup" button to add the Backup reservation. The waitlisted reservation will be displayed as a "Backup" reservation on the schedule.
 C. Annual Aircraft Scheduling
 Not applicable to lessees.
-1.  Each year there will be a thirty-one (31) day window beginning on November 1st and ending November 30th to allow for aircraft scheduling for the upcoming year. In the event that the initial aircraft acquisition occurs after this day but prior to December 31st, then the annual aircraft scheduling for the upcoming year will be for thirty (30) days following the close of the initial acquisition scheduling window. If there is less than thirty (30) days remaining in the year, annual aircraft scheduling for the upcoming year will be integrated into the initial acquisition scheduling window.
-2.  When the scheduling window opens, the scheduling order will be determined by the following rules:
-a.  Highest ownership equity.
-b.  Founder's Circle members with the highest ownership equity.
-c.  Founder's Circle members by purchase date (seniority).
-d.  Non-Founder's Circle members with the highest ownership equity.
-e.  Non-Founder's Circle members by purchase date (seniority).
-- The manager will notify each member electronically when their individual scheduling window will open.
-a.  SR22T: Each member share will have one and a half (1.5) days to reserve the aircraft for the upcoming year during their scheduling window.
-b.  SF50: Each member will have three (3) days to reserve the aircraft for the upcoming year during their scheduling window.
-3.  Waitlist: In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. The list order will be determined on a "first come, first serve" basis. Waitlist (or Backup) reservations are added in the same way a normal reservation is added. However, the scheduler will not allow two normal reservations to overlap. To solve this, click the "Make Backup" button to add the Backup reservation. The waitlisted reservation will be displayed as a "Backup" reservation on the schedule.
+1. Each year there will be a thirty-one (31) day window beginning on November 1st and ending November 30th to allow for aircraft scheduling for the upcoming year. In the event that the initial aircraft acquisition occurs after this day but prior to December 31st, then the annual aircraft scheduling for the upcoming year will be for thirty (30) days following the close of the initial acquisition scheduling window. If there is less than thirty (30) days remaining in the year, annual aircraft scheduling for the upcoming year will be integrated into the initial acquisition scheduling window.
+2. When the scheduling window opens, the scheduling order will be determined by the following rules:
+- Scheduling Order
+a. Highest ownership equity.
+b. Founder's Circle members with the highest ownership equity.
+c. Founder's Circle members by purchase date (seniority).
+d. Non-Founder's Circle members with the highest ownership equity.
+e. Non-Founder's Circle members by purchase date (seniority).
+The manager will notify each member electronically when their individual scheduling window will open.
+a. SR22T: Each member share will have one and a half (1.5) days to reserve the aircraft for the upcoming year during their scheduling window.
+b. SF50: Each member will have three (3) days to reserve the aircraft for the upcoming year during their scheduling window.
+3. Waitlist: In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. The list order will be determined on a "first come, first serve" basis. Waitlist (or Backup) reservations are added in the same way a normal reservation is added. However, the scheduler will not allow two normal reservations to overlap. To solve this, click the "Make Backup" button to add the Backup reservation. The waitlisted reservation will be displayed as a "Backup" reservation on the schedule.
 D. Daily Aircraft Scheduling
 Beginning on January 1st each year at midnight (00:00) in the timezone the aircraft is based (base local time), "Daily Aircraft Scheduling" will begin and will remain open twenty-four (24) hours a day, every day, until December 31st at 23:59 (base local time).
 "Daily Aircraft Scheduling" will be on a "first come, first serve" basis.
 Waitlist: In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. The list order will be determined on a "first come, first serve" basis. Waitlist (or Backup) reservations are added in the same way a normal reservation is added. However, the scheduler will not allow two normal reservations to overlap. To solve this, click the "Make Backup" button to add the Backup reservation. The waitlisted reservation will be displayed as a "Backup" reservation on the schedule.
 E. Cancellations & Modifications
-Cancellations
 The following cancellation rules and fees only apply when another owner has "Waitlisted" for the same (or overlapping) dates of the reservation. All cancellations that are the result of an "Unavailable" aircraft status are not subject to the following rules.
 Cancellations may be made to a reservation up to forty-eight (48) hours prior to the start time of the reservation with no fee assessed.
 All cancellations made by a member within forty-eight (48) hours prior to the start time of their reservation will be charged a late cancellation fee:
 ------------------------------------------------------------------
-Cancellation Window                 Fee
+Cancellation Window Fee
 ----------------------------------- ------------------------------
-48 hours to 24 hours before start   $250
-24 hours to 6 hours before start    $500
-Within 6 hours of start             $1,500
+48 hours to 24 hours before start $250
+24 hours to 6 hours before start $500
+Within 6 hours of start $1,500
 ------------------------------------------------------------------
-Modifications
 Modifications can be made to a reservation provided:
-1.  The modification does not affect another member's reservation.
-2.  A shortened reservation complies with the cancellation policy (as described above) for the day(s) cancelled from the modified reservation. However, in the event the "waitlisted" owner agrees to accept the aircraft as a result of the shortened modification, the cancellation policy does not apply.
+1. The modification does not affect another member's reservation.
+2. A shortened reservation complies with the cancellation policy (as described above) for the day(s) cancelled from the modified reservation. However, in the event the "waitlisted" owner agrees to accept the aircraft as a result of the shortened modification, the cancellation policy does not apply.
 3. Aircraft Access
 Manager Responsibilities
-1.  The manager will maintain access and control of the aircraft when it is not under the control and/or use by a member.
-2.  All aircraft access and control by the manager for aircraft management purposes is not subject to the policies of this section.
-3.  The manager will transfer access and control of the aircraft to a member, either directly or indirectly, by the start time of their reservation.
+1. The manager will maintain access and control of the aircraft when it is not under the control and/or use by a member.
+2. All aircraft access and control by the manager for aircraft management purposes is not subject to the policies of this section.
+3. The manager will transfer access and control of the aircraft to a member, either directly or indirectly, by the start time of their reservation.
 Member Responsibilities
 Members will transfer control of the aircraft to the manager, either directly or indirectly, at the conclusion of their reservation.
 4. Aircraft Operation & Use
@@ -71,10 +70,9 @@ The manager will deliver the aircraft at the member's reservation time at a mutu
 Fuel Level at Delivery
 Unless otherwise stipulated by the member, the aircraft will be delivered with the following fuel level:
 -------------------------------------------------------------
-Aircraft                       Delivery Fuel Level
+Aircraft Delivery Fuel Level
 ------------------------------ ------------------------------
-SR22T                          60 gals. (Tabs)
-SF50                           TBD
+SR22T 60 gals. (Tabs)
 -------------------------------------------------------------
 All aircraft will be fueled to the levels indicated above, unless:
 - A member who wishes for the aircraft to be delivered with a fuel load greater than indicated above must inform the manager prior to the start of their reservation.
@@ -84,14 +82,11 @@ Members are expected to operate the aircraft in accordance with the policies, pr
 SR22T — Cruise Power Policy
 In addition to complying with the policies outlined above, members will consider the maximum operational cruise power setting to be 75% power (based on the cruise performance data in Section 5 of the POH). This has been set by the Manager for engine longevity.
 This is only a cruise policy. Takeoff, Full Power Climb Rich of peak technique, and Cruise Climb Lean of Peak technique are expected and allowed.
-Failure to comply will result in an excessive engine cruise penalty fee of $50 per hour for the entire duration of any cruise segment greater than 75% power.
-SF50
-TBD
-Aircraft Return
+Failure to comply will result in an excessive engine cruise penalty fee of $50 per hour for the entire duration of any cruise segment greater than 75% power, as measured by the "Hobbs meter."
 Members will return the aircraft to a mutually agreed upon location acceptable to the member and the manager.
-Late Return
 If the member suspects they will not be able to return the aircraft by the end of their reservation, they must immediately inform the manager. Failure to inform the manager may result in monetary penalties.
 Late returns resulting from an Unavailable Operational Status (see Section 6) that are out of the member's control will not result in any penalties. For all other reasons, late returns are subject to the following:
+For the purposes of these penalties, hours late are measured as elapsed clock time from the end of the member's reservation. Aircraft time recorded on the "Hobbs meter" is not used to assess late return penalties.
 Late Return — Affects Another Member's Reservation
 $100 per hour for each hour late, beginning at the start of the affected member's reservation time, not to exceed $500 per day.
 Example: A late return that encroaches on another member's reservation for three hours = $300 penalty. A late return that extends beyond the first day and returns at any time on the second day = $1,000 penalty.
@@ -99,13 +94,11 @@ Late Return — Does Not Affect Another Member's Reservation
 No penalty will be assessed as long as the manager is informed prior to the delay — the reservation will be extended to account for the delay.
 If the manager is not informed, each member will have a one (1) hour grace period from the end of their reservation. After the grace period expires, the member will be assessed a penalty of $50 per hour, not to exceed $250 per day.
 Example: An aircraft returned three hours late = $100 penalty. A late return that extends into a second day and returns at any time on the second day = $500 penalty.
-Fuel at Return
 Unless otherwise stipulated, the aircraft will be fueled to the following level upon return:
 -------------------------------------------------------------
-Aircraft                       Return Fuel Level
+Aircraft Return Fuel Level
 ------------------------------ ------------------------------
-SR22T                          60 gals. (Tabs)
-SF50                           TBD
+SR22T 60 gals. (Tabs)
 -------------------------------------------------------------
 - If the aircraft is returned with a fuel level greater than indicated above, the aircraft will not be fueled.
 - Aircraft fueling will be accomplished (or directed) by the manager upon return.
@@ -118,6 +111,14 @@ Unless otherwise stated, all fees/penalties incurred by a member will be paid to
 - Operational Policy violation fees will be paid to the manager unless the violation resulted in aircraft damage — in that case, additional fees to cover the damage will be paid to the aircraft's operating account.
 - Excessive Engine Cruise fees will be paid to the aircraft's operating account.
 - Late Return penalties will be paid to the affected member whose reservation was encroached upon. Otherwise, if assessed where no member's reservation was affected, paid to the manager.
+Lessee Minimum Daily Charge
+Applies to Lessees only.
+For any reservation spanning more than two (2) "Calendar days," a Lessee will be charged the greater of:
+1. Two (2) hours of aircraft time for each "Calendar day" of the reservation; or
+2. The actual aircraft time used, as measured by the Hobbs meter.
+Each "Calendar day" on which the Lessee holds the reservation counts as a full day, including partial first and last days. Reservations spanning two (2) "Calendar days" or fewer are charged at actual Hobbs time with no minimum applied.
+This charge is paid to the manager.
+Example: a four (4) "Calendar day" reservation with 5.0 hours of Hobbs time is charged 8.0 hours (2 hours × 4 days). The same reservation with 11.3 hours of Hobbs time is charged 11.3 hours.
 Fees Incurred by the Manager
 Unless otherwise stated, all fees/penalties incurred by the manager while exercising its member privileges will be paid into the aircraft's operating account.
 - Cancellation fees — paid to the aircraft's operating account.
@@ -126,18 +127,13 @@ Unless otherwise stated, all fees/penalties incurred by the manager while exerci
 - Late Return penalties will be paid to the affected member whose reservation was encroached upon. Otherwise, if assessed where no member's reservation was affected, paid directly to the aircraft's operating account.
 Any member (other than lessees) can request an independent audit in order to verify all manager fees have been handled in accordance with this policy.
 6. Aircraft Operational Status
-Available
 The aircraft is available for use by members.
-Unavailable
 The aircraft is not available for use by members due to (but not limited to):
 - Maintenance (planned or unplanned)
-- Weather
 - National Airspace closure, full or partial, that directly affects the member's ability to operate the aircraft
 - "Act of God", other than weather
 7. International Operations
 Once the member aircraft is registered with the United States Customs and Border Patrol (CBP) and has a current CBP sticker, members are permitted to operate the aircraft to the following country (or countries and/or regions) to/from the United States of America:
-- Canada
-- Caribbean
 For all reservations that will include an international stop(s), the member will list each international stop in the aircraft scheduling and reservation application with all applicable Electronic Advance Passenger Information Service (eAPIS) information.
 Operations to countries not listed above require prior approval of the manager. Additionally, due to insurance policy restrictions there may be an additional cost to the member associated with changes to the insurance policy to add a country not listed.
 Other than for operational planning and control purposes, the manager will assist members as necessary.
