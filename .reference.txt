@@ -1,7 +1,8 @@
 bop Aero Services LLC
 Aircraft Ownership Programs — Scheduling and Use Policies
 These policies govern the expectations and responsibilities of BOP AERO SERVICES LLC (the "Manager") and the Members of any BOP AERO Program Aircraft (the "Members") regarding the scheduling and use of the aircraft.
-This Scheduling and Use Policy is a living document. It is reviewed and updated periodically, and the Manager may amend it as the program, the fleet, applicable regulations, or operating experience require. Every revision is published at schedusepolicy.bopaero.com under its own version number, with changes from the previous version marked by a change bar. The current published version supersedes all prior versions.
+This Scheduling and Use Policy is a living document. It is reviewed and updated periodically, and the Manager may amend it as the program, the fleet, applicable regulations, or operating experience require. Every revision is published at schedusepolicy.bopaero.com under its own version number, with changes from the previous version marked by a change bar. The current published version supersedes all prior versions. The Manager will notify Members and Lessees of each revision through the Flight Circle Message Notification System.
+A Member's or Lessee's signed acknowledgment of this Policy applies to this Policy as amended from time to time. A signed acknowledgment remains in effect for subsequent revisions and does not require re-signature.
 Aircraft: The specific aircraft owned by the member documented on the filed FAA aircraft registration.
 Base: The physical location the aircraft is stored when not in possession of a member.
 Trip: All planned or actual points of takeoff and/or landing, originating at the location where the member took possession of the aircraft, and ending at the last point of landing, planned or actual, prior to transferring possession of the aircraft.
