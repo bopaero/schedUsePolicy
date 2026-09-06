@@ -44,7 +44,9 @@ hero = re.search(r'<div class="hero">(.*?)<div class="hero-meta">', html, re.S).
 h1 = re.search(r"<h1>(.*?)</h1>", hero, re.S).group(1)
 h1 = re.sub(r"<br\s*/?>", " — ", h1)
 h1 = re.sub(r"</?span[^>]*>", "", h1).strip()
-intro = re.search(r"<p>(.*?)</p>", hero, re.S).group(1).strip()
+intros = [m.strip() for m in re.findall(r"<p[^>]*>(.*?)</p>", hero, re.S)]
+if not intros:
+    sys.exit("ERROR: no intro paragraph found in the hero block")
 
 # --- version stamp -----------------------------------------------------
 # The docx is signed by owners/lessees, so it must state the version it is
@@ -60,8 +62,7 @@ parts = [
     "<p><strong>bop Aero Services LLC</strong></p>",
     f"<p>Aircraft Ownership Programs \u2014 Scheduling and Use Policy | {version}</p>",
     f"<h1>{h1}</h1>",
-    f"<p>{intro}</p>",
-]
+] + [f"<p>{t}</p>" for t in intros]
 parts += re.findall(r'<section class="guide-section"[^>]*>(.*?)</section>', html, re.S)
 body = "\n".join(parts)
 
