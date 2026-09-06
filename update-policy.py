@@ -15,7 +15,7 @@ What it does:
   6. Commits and pushes to GitHub (live in ~30 seconds)
 """
 
-import sys, os, re, shutil, subprocess, argparse
+import sys, os, re, shutil, subprocess, argparse, tempfile
 from difflib import SequenceMatcher
 from datetime import date
 
@@ -168,6 +168,52 @@ def update_versions_array(html, old_version, new_version, label):
     return html
 
 
+def check_script_blocks(html):
+    """Syntax-check every inline <script> block with `node --check`.
+
+    update-policy.py writes a free-text label straight into a single-quoted JS
+    string literal. A stray character there kills the whole <script> block, and
+    because VERSIONS and the main UI block are coupled, that silently blanks the
+    version badge, the history dropdown, the footer/print version and the nav
+    scrollspy — on a page the script has already committed and pushed.
+
+    Returns (ok, message). Skips the check (ok=True) if node is unavailable, so
+    a missing toolchain never blocks a publish.
+    """
+    if not shutil.which('node'):
+        return True, 'node not found — skipping JS syntax check'
+
+    blocks = re.findall(r'<script(?![^>]*\bsrc=)[^>]*>(.*?)</script>', html, re.DOTALL)
+    if not blocks:
+        return True, 'no inline <script> blocks found'
+
+    for i, block in enumerate(blocks, 1):
+        with tempfile.NamedTemporaryFile('w', suffix='.js', delete=False,
+                                         encoding='utf-8') as f:
+            f.write(block)
+            tmp = f.name
+        try:
+            result = subprocess.run(['node', '--check', tmp],
+                                    capture_output=True, text=True)
+        finally:
+            os.unlink(tmp)
+        if result.returncode != 0:
+            detail = (result.stderr or '').strip()
+            # node reports the resolved path (/private/var/... on macOS)
+            for path in (os.path.realpath(tmp), tmp):
+                detail = detail.replace(path, f'<script block {i}>')
+            # keep the pointed-at source line and the error, drop node's stack
+            lines = []
+            for line in detail.splitlines():
+                if line.startswith('    at ') or line.startswith('Node.js v'):
+                    break
+                lines.append(line)
+            detail = '\n'.join(lines).strip()
+            return False, f'script block {i} of {len(blocks)} has a syntax error:\n{detail}'
+
+    return True, f'{len(blocks)} inline script block(s) OK'
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
@@ -235,6 +281,18 @@ def main():
     # ── Patch HTML
     html = apply_change_bars(html, changed_texts)
     html = update_versions_array(html, current_version, new_version, label)
+
+    # ── Verify the patched JS still parses BEFORE anything touches disk or git.
+    # A bad label would otherwise be committed and pushed onto a broken page.
+    print('\nChecking JavaScript syntax...')
+    ok, message = check_script_blocks(html)
+    print(f'  {message}')
+    if not ok:
+        print('\nABORTED — index.html was NOT modified and nothing was committed.')
+        print('The version history label is the usual culprit; re-run with a')
+        print('simpler --label, or copy the text from the docx rather than retyping it.')
+        os.remove(archive_path)
+        sys.exit(1)
 
     with open(INDEX_HTML, 'w') as f:
         f.write(html)
