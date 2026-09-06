@@ -66,6 +66,14 @@ parts = [
 parts += re.findall(r'<section class="guide-section"[^>]*>(.*?)</section>', html, re.S)
 body = "\n".join(parts)
 
+# --- version placeholders the site fills in with JS --------------------
+# The acknowledgment block names the version being signed. On the site that
+# span is populated at runtime; the docx has no JS, so substitute it here or
+# a signed copy would carry a blank where its version should be.
+if 'id="ackVersion"' not in body:
+    sys.exit('ERROR: acknowledgment version placeholder missing from index.html')
+body = re.sub(r'<span id="ackVersion"></span>', version, body)
+
 # --- 2. callout icons out first ----------------------------------------
 body = re.sub(r'<div class="callout-icon">.*?</div>', "", body, flags=re.S)
 
