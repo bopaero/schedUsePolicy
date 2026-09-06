@@ -23,6 +23,11 @@ REPO        = os.path.dirname(os.path.abspath(__file__))
 INDEX_HTML  = os.path.join(REPO, 'index.html')
 VERSIONS_DIR = os.path.join(REPO, 'versions')
 REFERENCE   = os.path.join(REPO, '.reference.txt')
+HTML_TO_DOCX = os.path.join(REPO, 'html-to-docx.py')
+
+# Matches the version stamp line the docx carries, e.g.
+# "Aircraft Ownership Programs — Scheduling and Use Policy | v2026-09-06.1"
+VERSION_STAMP_RE = re.compile(r'v\d{4}-\d{2}-\d{2}\.\d+')
 
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
@@ -39,8 +44,15 @@ def pandoc_to_paragraphs(docx_path):
     paras = []
     for line in result.stdout.splitlines():
         line = re.sub(r'\s+', ' ', line).strip()
-        if len(line) > 15:   # skip headings, labels, blank lines
-            paras.append(line)
+        if len(line) <= 15:      # skip headings, labels, blank lines
+            continue
+        # The docx carries a version stamp (see html-to-docx.py) so that a
+        # signed copy states which version was signed. It changes every
+        # release by definition — diffing it would flag a bogus change and
+        # send the fuzzy matcher hunting for a paragraph that isn't policy.
+        if VERSION_STAMP_RE.search(line):
+            continue
+        paras.append(line)
     return paras
 
 def load_reference():
@@ -296,6 +308,16 @@ def main():
 
     with open(INDEX_HTML, 'w') as f:
         f.write(html)
+
+    # ── Rebuild the docx from the just-published HTML.
+    # The version is only assigned here, so the docx that was fed in still
+    # carries the previous one. Owners and lessees sign the docx, so it must
+    # state the version it is being signed against — regenerate it now, then
+    # take the reference snapshot from that file so HTML, docx and reference
+    # are one lineage with one version.
+    print('\nRegenerating the source docx from the published HTML...')
+    subprocess.run([sys.executable, HTML_TO_DOCX, INDEX_HTML, docx_path], check=True)
+    new_paras = pandoc_to_paragraphs(docx_path)
 
     # ── Save new reference
     save_reference(new_paras)

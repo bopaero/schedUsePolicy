@@ -46,7 +46,22 @@ h1 = re.sub(r"<br\s*/?>", " — ", h1)
 h1 = re.sub(r"</?span[^>]*>", "", h1).strip()
 intro = re.search(r"<p>(.*?)</p>", hero, re.S).group(1).strip()
 
-parts = [f"<h1>{h1}</h1>", f"<p>{intro}</p>"]
+# --- version stamp -----------------------------------------------------
+# The docx is signed by owners/lessees, so it must state the version it is
+# being signed against. Mirrors the site's print-only header (.print-header)
+# so the printed page and the docx carry identical identification.
+vm = re.search(r"\{\s*version:\s*'(v[\d\-\.]+)'[^}]*?archived:\s*null", html, re.S)
+if not vm:
+    sys.exit("ERROR: could not read CURRENT_VERSION from index.html "
+             "(no VERSIONS entry with archived: null)")
+version = vm.group(1)
+
+parts = [
+    "<p><strong>bop Aero Services LLC</strong></p>",
+    f"<p>Aircraft Ownership Programs \u2014 Scheduling and Use Policy | {version}</p>",
+    f"<h1>{h1}</h1>",
+    f"<p>{intro}</p>",
+]
 parts += re.findall(r'<section class="guide-section"[^>]*>(.*?)</section>', html, re.S)
 body = "\n".join(parts)
 
@@ -72,4 +87,4 @@ tmp = pathlib.Path(tempfile.gettempdir()) / "policy-gen.html"
 tmp.write_text(doc, encoding="utf-8")
 
 subprocess.run(["pandoc", "-f", "html", "-t", "docx", str(tmp), "-o", str(out)], check=True)
-print(f"wrote {out}")
+print(f"wrote {out}  ({version})")
