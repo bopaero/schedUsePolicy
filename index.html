@@ -262,6 +262,14 @@ nav::-webkit-scrollbar-thumb { background:var(--border-bright); }
 .callout p { margin:0; color:var(--text-muted); font-size:14px; }
 .callout p strong { color:var(--text); }
 
+/* SIGNATURE TABLE */
+.sig-table { width:100%; border-collapse:collapse; font-size:14px; margin:20px 0 8px; }
+.sig-table td {
+  padding:16px 12px 8px; border-bottom:1px solid var(--border-bright);
+  vertical-align:bottom; color:var(--text);
+}
+.sig-table td:first-child { width:40%; font-weight:500; white-space:nowrap; }
+
 /* FEE TABLE */
 .fee-table { width:100%; border-collapse:collapse; font-size:14px; margin:12px 0 20px; }
 .fee-table th {
@@ -438,10 +446,12 @@ nav::-webkit-scrollbar-thumb { background:var(--border-bright); }
   .rule-box { background:#f4f4f4; border:1px solid #bbbbbb; }
   .rule-box-title { color:#555555; }
   .fee-table th { background:#eeeeee; }
+  .sig-table { font-size:11pt; }
+  .sig-table td { border-bottom:1px solid #333333; padding:20pt 6pt 6pt; }
 
   /* Change bar — keep visible in print */
-  . { padding-left:10pt !important; }
-  .::before { width:2pt; background:#cc8800; }
+  .changed { padding-left:10pt !important; }
+  .changed::before { width:2pt; background:#cc8800; }
 
   a { color:#005580; text-decoration:none; }
   a[href]::after { content:''; } /* suppress URL printing */
@@ -810,11 +820,15 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
       <h2>8. Acknowledgment</h2>
       <p class="changed">By signing below, I acknowledge that I have received, read, and understand the <strong>bop Aero Services LLC Aircraft Ownership Programs Scheduling and Use Policy</strong>, <strong><span id="ackVersion"></span></strong>, and that I agree to comply with it.</p>
       <p class="changed">I further acknowledge that this Policy is a living document that will be amended from time to time, that the Manager will notify Members and Lessees of each revision through the Flight Circle Message Notification System, and that <strong>this acknowledgment applies to this Policy as amended</strong> and remains in effect for subsequent revisions without re-signature.</p>
-      <p class="changed">Printed Name: _______________________________________________</p>
-      <p class="changed">Capacity (Member/Owner or Lessee): __________________________</p>
-      <p class="changed">Program Aircraft: ___________________________________________</p>
-      <p class="changed">Signature: __________________________________________________</p>
-      <p class="changed">Date: _______________________________________________________</p>
+      <table class="sig-table">
+        <tbody>
+          <tr><td class="changed">Printed Name</td><td></td></tr>
+          <tr><td class="changed">Capacity (Member/Owner or Lessee)</td><td></td></tr>
+          <tr><td class="changed">Program Aircraft</td><td></td></tr>
+          <tr><td class="changed">Signature</td><td></td></tr>
+          <tr><td class="changed">Date</td><td></td></tr>
+        </tbody>
+      </table>
     </section>
 
   </main>
