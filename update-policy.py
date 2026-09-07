@@ -24,6 +24,7 @@ INDEX_HTML  = os.path.join(REPO, 'index.html')
 VERSIONS_DIR = os.path.join(REPO, 'versions')
 REFERENCE   = os.path.join(REPO, '.reference.txt')
 HTML_TO_DOCX = os.path.join(REPO, 'html-to-docx.py')
+HTML_TO_PDF  = os.path.join(REPO, 'html-to-pdf.py')
 
 # Matches the version stamp line the docx carries, e.g.
 # "Aircraft Ownership Programs — Scheduling and Use Policy | v2026-09-06.1"
@@ -319,6 +320,31 @@ def main():
     subprocess.run([sys.executable, HTML_TO_DOCX, INDEX_HTML, docx_path], check=True)
     new_paras = pandoc_to_paragraphs(docx_path)
 
+    # ── Render the signing PDF. This is the artifact owners and lessees
+    # actually sign, generated straight from the published HTML so Word never
+    # enters the chain. Non-fatal: a missing Chrome must not strand a release
+    # that is otherwise complete — the site and docx are already correct.
+    pdf_path = os.path.splitext(docx_path)[0] + '.pdf'
+    print('Rendering the signing PDF...')
+    pdf = subprocess.run([sys.executable, HTML_TO_PDF, INDEX_HTML, pdf_path],
+                         capture_output=True, text=True)
+    if pdf.returncode == 0:
+        print(f'  {pdf.stdout.strip()}')
+    else:
+        print('  WARNING: PDF generation failed — site and docx are fine, but')
+        print('  the signing PDF was not refreshed. Re-run: python3 html-to-pdf.py')
+        print(f'  {pdf.stderr.strip()[:300]}')
+
+    # ── Archive the signed artifacts for this version. versions/ held only
+    # HTML; the canonical docx and PDF are overwritten every release, so a
+    # signed version's exact files would otherwise be unrecoverable.
+    for path in (docx_path, pdf_path):
+        if os.path.exists(path):
+            ext = os.path.splitext(path)[1]
+            dest = os.path.join(VERSIONS_DIR, f'{new_version}{ext}')
+            shutil.copy(path, dest)
+            print(f'Archived: versions/{new_version}{ext}')
+
     # ── Save new reference
     save_reference(new_paras)
 
@@ -328,6 +354,7 @@ def main():
     run(['git', 'add', 'index.html',
          f'versions/{current_version}.html',
          '.reference.txt'])
+    run(['git', 'add', '--', VERSIONS_DIR])
     run(['git', 'commit', '-m',
          f'Policy update {new_version}: {label}\n\n'
          'Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>'])
