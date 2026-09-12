@@ -147,7 +147,34 @@ def apply_change_bars(html, changed_texts):
             result.append(line)
         i += 1
 
-    return '\n'.join(result)
+    html = '\n'.join(result)
+
+    # Second pass: <p> elements that do NOT start a line.
+    #
+    # The loop above anchors on ^\s*<tag>, so a paragraph wrapped in a one-line
+    # callout never matches and never gets a bar:
+    #
+    #   <div class="callout note"><div class="callout-icon">i</div><p>text</p></div>
+    #
+    # The line begins with <div>, so the <p> is invisible to it. This was hit on
+    # three consecutive releases (v2026-09-06.4, v2026-09-12.1, v2026-09-12.2) and
+    # fixed by hand each time. It is fully deterministic, so handle it here.
+    #
+    # Deliberately <p> only: <td>/<th> are also inline within <tr>, but no table
+    # cell in this document has ever carried a change bar (including the fuel and
+    # runway tables) — the paragraph introducing a table is barred instead.
+    def _bar_inline_p(m):
+        attrs, content = m.group(1), m.group(2)
+        if 'changed' in (attrs or ''):
+            return m.group(0)
+        if not matches_changed(content, changed_texts):
+            return m.group(0)
+        return add_class_to_tag(f'<p{attrs}>', 'changed') + content + '</p>'
+
+    html = re.sub(r'(?<!^)(?<!\n)<p(\b[^>]*)?>(.*?)</p>',
+                  _bar_inline_p, html, flags=re.MULTILINE)
+
+    return html
 
 
 # ── Version management ────────────────────────────────────────────────────────
@@ -227,12 +254,61 @@ def check_script_blocks(html):
     return True, f'{len(blocks)} inline script block(s) OK'
 
 
+
+def verify_live(new_version, timeout_s=300, interval_s=15):
+    """Report what the SITE is actually serving — not merely what we pushed.
+
+    The old message claimed the version was 'live' the instant git push returned.
+    That is false: GitHub Pages still has to build and deploy, and on 2026-09-12 a
+    build sat queued for over ten minutes while the site served the previous
+    version. Reporting a push as a publish sends you off hard-refreshing a page
+    that was never going to change.
+    """
+    import urllib.request, urllib.error, time
+
+    url = 'https://schedusepolicy.bopaero.com/'
+    try:
+        local = open(INDEX_HTML, 'rb').read()
+    except Exception:
+        local = None
+
+    print(f'Waiting for GitHub Pages to deploy (up to {timeout_s // 60} min)...')
+    deadline = time.time() + timeout_s
+    while time.time() < deadline:
+        try:
+            req = urllib.request.Request(
+                f'{url}?cb={int(time.time() * 1000)}',
+                headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache'})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                body = r.read()
+            if new_version.encode() in body and (local is None or len(body) == len(local)):
+                print(f'LIVE       {new_version} at {url}')
+                return True
+        except Exception:
+            pass
+        time.sleep(interval_s)
+
+    print(f'NOT LIVE   the site is still serving an older version after '
+          f'{timeout_s // 60} min.')
+    print('  Your commit is safe on GitHub; only the Pages deploy is behind.')
+    print('  Check the build:  https://github.com/bopaero/schedUsePolicy/actions')
+    print('  A run stuck in "queued" clears with Cancel workflow, then Re-run.')
+    print('  Also confirm Settings -> Pages still reads '
+          '"Deploy from a branch: main / (root)".')
+    return False
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
     parser = argparse.ArgumentParser(description='Publish a policy update to schedUsePolicy.bopaero.com')
     parser.add_argument('docx', help='Path to the updated .docx exported from Pages')
     parser.add_argument('--label', default='', help='Short description of what changed (shown in version history)')
+    parser.add_argument('--no-push', action='store_true',
+                        help='Commit locally but do NOT push. Use this so the change-bar audit '
+                             'can be folded into the SAME commit: a second push landing seconds '
+                             'after the first cancels the in-flight GitHub Pages build and the '
+                             'replacement can sit queued indefinitely (seen 2026-09-12).')
     args = parser.parse_args()
 
     docx_path = os.path.expanduser(args.docx)
@@ -349,7 +425,7 @@ def main():
     save_reference(new_paras)
 
     # ── Git
-    print('\nPushing to GitHub...')
+    print('\nCommitting...')
     run(['git', 'pull'])
     run(['git', 'add', 'index.html',
          f'versions/{current_version}.html',
@@ -358,9 +434,17 @@ def main():
     run(['git', 'commit', '-m',
          f'Policy update {new_version}: {label}\n\n'
          'Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>'])
-    run(['git', 'push'])
 
-    print(f'\nDone! {new_version} is live at https://schedusepolicy.bopaero.com (updates in ~30s)')
+    if args.no_push:
+        print(f'\nCOMMITTED  {new_version} (local only — not pushed)')
+        print('  Audit the change bars now, amend or add a follow-up commit, then:')
+        print('    git push')
+        print('  Pushing once keeps this release to a single GitHub Pages build.')
+        return
+
+    run(['git', 'push'])
+    print(f'\nPUSHED     {new_version}')
+    verify_live(new_version)
 
 
 if __name__ == '__main__':
