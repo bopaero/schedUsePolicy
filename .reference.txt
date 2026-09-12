@@ -105,10 +105,17 @@ Flight into forecast severe icing, known or forecast hail, or thunderstorm activ
 Flight Into Known Icing
 Any pilot who operates or plans to operate the aircraft into known icing conditions will have completed the Cirrus Icing Awareness Course for the specific aircraft to be flown within the preceding twenty-four (24) calendar months.
 All ice protection equipment will be fully serviceable, with adequate fluid quantity for the intended flight.
-SR22T — Cruise Power Policy
-In addition to complying with the policies outlined above, members will consider the maximum operational cruise power setting to be 75% power (based on the cruise performance data in Section 5 of the POH). This has been set by the Manager for engine longevity.
+SR22T Operating Limitations
+Cruise Power & Temperature
+In addition to complying with the policies outlined above, members will consider the maximum operational cruise power setting to be 75% power (based on the cruise performance data in Section 5 of the POH), and will observe a maximum Turbine Inlet Temperature (TIT) of 1600°F during cruise flight. These have been set by the Manager for engine longevity.
 This is only a cruise policy. Takeoff, Full Power Climb Rich of peak technique, and Cruise Climb Lean of Peak technique are expected and allowed.
-Failure to comply will result in an excessive engine cruise penalty fee of $50 per hour for the entire duration of any cruise segment greater than 75% power, as measured by the "Hobbs meter."
+Failure to comply with either limit will result in an excessive engine cruise penalty fee of $50 per hour for the entire duration of any cruise segment conducted greater than 75% power or above 1600°F TIT, as measured by the "Hobbs meter."
+Ground Operations
+Brake use while taxiing will be limited to that necessary to control or stop the aircraft. Members will avoid riding the brakes and will avoid taxiing at power settings that require continuous braking, as both cause premature brake wear.
+The POH limits propeller speed during taxi to 1000 RPM. Members may apply a higher setting only as necessary to maintain movement, up to a maximum of 1500 RPM and for periods of ten (10) seconds or less. Propeller speed during taxi will not exceed 1500 RPM.
+The propeller speed limit is set by the Manager to avoid propeller damage caused by gravel and other foreign object debris drawn up at higher propeller speeds.
+Failure to observe these ground operating limits is a failure to operate the aircraft as prescribed and may result in fees or penalties as described above, including the cost of premature brake or tire replacement, or of propeller repair, attributable to improper technique.
+SF50 Operating Limitations
 Aircraft Care & Cleanliness
 Smoking and the use of electronic cigarettes or vaporizers are prohibited aboard the aircraft at all times.
 Pets may be carried provided the member notifies the manager in advance and the animal is crated or otherwise restrained for the duration of the flight.
