@@ -564,7 +564,8 @@ const VERSIONS = [
   { version: 'v2026-09-12.1', label: 'Added Pilot in Command, Passengers, Permitted Use, runway and surface, weather and icing, aircraft care, overnight storage, and maintenance clauses to Section 4', archived: 'versions/v2026-09-12.1.html' },
   { version: 'v2026-09-12.2', label: 'Broadened the SR22T block into SR22T Operating Limitations: added a maximum cruise TIT of 1600F and a new Ground Operations clause covering brake use and taxi propeller speed', archived: 'versions/v2026-09-12.2.html' },
   { version: 'v2026-10-20.1', label: 'Added Section 2F Reservation Length and Idle Aircraft: 14-day maximum consecutive reservation (longer by manager approval) and manager repositioning of aircraft idle 3+ days at no expense to the original member', archived: 'versions/v2026-10-20.1.html' },
-  { version: 'v2026-10-20.2', label: 'Section 2F: Lessee reservations longer than 5 consecutive days require manager approval', archived: null },
+  { version: 'v2026-10-20.2', label: 'Section 2F: Lessee reservations longer than 5 consecutive days require manager approval', archived: 'versions/v2026-10-20.2.html' },
+  { version: 'v2026-10-20.3', label: 'Section 2F: Note that members see a Flight Circle Schedule Restrictions message for reservations over 5 days and may select Make Reservation; Lessees must contact the manager', archived: null },
 ];
 const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
 </script>
@@ -738,9 +739,10 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
 
       <h3>F. Reservation Length &amp; Idle Aircraft</h3>
       <ol>
-        <li class="changed"><strong>Maximum Reservation Length:</strong> A member may reserve the aircraft for up to fourteen (14) consecutive days. Reservations longer than fourteen (14) consecutive days require approval from the manager and will be considered on a case-by-case basis. For Lessees, reservations longer than five (5) consecutive days require approval from the manager.</li>
+        <li><strong>Maximum Reservation Length:</strong> A member may reserve the aircraft for up to fourteen (14) consecutive days. Reservations longer than fourteen (14) consecutive days require approval from the manager and will be considered on a case-by-case basis. For Lessees, reservations longer than five (5) consecutive days require approval from the manager.</li>
         <li><strong>Idle Aircraft Repositioning:</strong> When an aircraft will not be flown for three (3) or more consecutive days during a member's reservation, the manager may, after notifying the original member, reposition the aircraft for use by another member during that period. The aircraft will be returned to the original member before their next planned use, at no expense to the original member.</li>
       </ol>
+      <div class="callout note"><div class="callout-icon">ℹ️</div><p class="changed">When a member schedules a reservation longer than five (5) consecutive days, Flight Circle will display a &ldquo;Schedule Restrictions&rdquo; message. This is expected; the member may proceed by selecting <strong>Make Reservation</strong>. Lessees will not see this option and must contact the manager for approval.</p></div>
     </section>
 
     <!-- 3. Aircraft Access -->
