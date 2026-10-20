@@ -55,7 +55,7 @@ Modifications can be made to a reservation provided:
 1. The modification does not affect another member's reservation.
 2. A shortened reservation complies with the cancellation policy (as described above) for the day(s) cancelled from the modified reservation. However, in the event the "waitlisted" owner agrees to accept the aircraft as a result of the shortened modification, the cancellation policy does not apply.
 F. Reservation Length & Idle Aircraft
-1. Maximum Reservation Length: A member may reserve the aircraft for up to fourteen (14) consecutive days. Reservations longer than fourteen (14) consecutive days require approval from the manager and will be considered on a case-by-case basis.
+1. Maximum Reservation Length: A member may reserve the aircraft for up to fourteen (14) consecutive days. Reservations longer than fourteen (14) consecutive days require approval from the manager and will be considered on a case-by-case basis. For Lessees, reservations longer than five (5) consecutive days require approval from the manager.
 2. Idle Aircraft Repositioning: When an aircraft will not be flown for three (3) or more consecutive days during a member's reservation, the manager may, after notifying the original member, reposition the aircraft for use by another member during that period. The aircraft will be returned to the original member before their next planned use, at no expense to the original member.
 3. Aircraft Access
 Manager Responsibilities
