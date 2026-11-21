@@ -270,6 +270,9 @@ nav::-webkit-scrollbar-thumb { background:var(--border-bright); }
   background:var(--change-bar);
   border-radius:2px;
 }
+/* Content under a bold sub-label (e.g. an aircraft type) is indented; keep its change bar in the normal column */
+.guide-section .sub-indent { margin-left:24px; }
+.guide-section .sub-indent.changed::before { left:-24px; }
 /* For block elements like <p>, <ul>, <ol> that already have padding-left */
 .guide-section ul.changed,
 .guide-section ol.changed {
@@ -522,6 +525,8 @@ nav::-webkit-scrollbar-thumb { background:var(--border-bright); }
   /* Change bar — keep visible in print */
   .changed { padding-left:10pt !important; }
   .changed::before { width:2pt; background:#cc8800; }
+  .guide-section .sub-indent { margin-left:18pt; }
+  .guide-section .sub-indent.changed::before { left:-18pt; }
 
   a { color:#005580; text-decoration:none; }
   a[href]::after { content:''; } /* suppress URL printing */
@@ -834,13 +839,13 @@ const CURRENT_VERSION = VERSIONS[VERSIONS.length - 1].version;
       <p class="changed">Contamination will be removed only by placing the aircraft in a heated hangar, by approved ground deicing, or by gentle brushing of loose snow. Scraping, chipping, or the use of any hard tool on the aircraft surfaces is <strong>prohibited</strong>.</p>
       <p class="changed">Ground deicing is <strong>required</strong> whenever frost, ice, or snow cannot be fully removed by the methods above, or when the aircraft will depart during active freezing precipitation. Only deicing fluids and procedures approved in the POH or AFM for the specific aircraft will be used, and the member will confirm the fluid type with the service provider before application. Any deice fluid costs, including ground deicing and replenishment of ice protection fluid used during the member's reservation, are the responsibility of the member.</p>
       <p class="changed"><strong>SR22T</strong></p>
-      <p class="changed"><strong>Engine Preheat.</strong> When the engine has been cold-soaked at an outside air temperature of <strong>45&deg;F (7&deg;C) or below</strong>, it will be preheated for a minimum of <strong>six (6) hours</strong> before any start. Preheat may be accomplished either by keeping the aircraft in a heated hangar or, outdoors, by an engine heater with the engine cover installed. This limit is set by the Manager for engine longevity and is more conservative than the POH.</p>
-      <p class="changed">At base, the member will notify the manager at least twenty-four (24) hours before the reservation begins when preheat will be <strong>required</strong>, and the manager will facilitate it at no charge to the member. Away from base, the member is responsible for arranging and paying for preheat.</p>
-      <p class="changed">Starting a cold-soaked engine without the <strong>required</strong> preheat is a failure to operate the aircraft as prescribed and may result in fees or penalties as described above, including the cost of any resulting engine inspection or repair.</p>
-      <p class="changed"><strong>Engine Cover.</strong> If an outside air temperature at or below 45&deg;F (7&deg;C) is anticipated or forecast at any point during the member's reservation, the engine cover will be carried aboard the aircraft for the duration of the trip and will be installed whenever the aircraft is parked overnight outside a hangar. This is a preventive measure in case a heated hangar cannot be obtained.</p>
-      <p class="changed"><strong>Cold Starting.</strong> Engine starts will follow the POH cold-weather starting procedure, and starter engagement will not exceed the POH starter duty-cycle limits. If the engine does not start within those limits, the member will discontinue start attempts and contact the manager. Repeated or excessive priming is <strong>prohibited</strong>.</p>
+      <p class="changed sub-indent"><strong>Engine Preheat.</strong> When the engine has been cold-soaked at an outside air temperature of <strong>45&deg;F (7&deg;C) or below</strong>, it will be preheated for a minimum of <strong>six (6) hours</strong> before any start. Preheat may be accomplished either by keeping the aircraft in a heated hangar or, outdoors, by an engine heater with the engine cover installed. This limit is set by the Manager for engine longevity and is more conservative than the POH.</p>
+      <p class="changed sub-indent">At base, the member will notify the manager at least twenty-four (24) hours before the reservation begins when preheat will be <strong>required</strong>, and the manager will facilitate it at no charge to the member. Away from base, the member is responsible for arranging and paying for preheat.</p>
+      <p class="changed sub-indent">Starting a cold-soaked engine without the <strong>required</strong> preheat is a failure to operate the aircraft as prescribed and may result in fees or penalties as described above, including the cost of any resulting engine inspection or repair.</p>
+      <p class="changed sub-indent"><strong>Engine Cover.</strong> If an outside air temperature at or below 45&deg;F (7&deg;C) is anticipated or forecast at any point during the member's reservation, the engine cover will be carried aboard the aircraft for the duration of the trip and will be installed whenever the aircraft is parked overnight outside a hangar. This is a preventive measure in case a heated hangar cannot be obtained.</p>
+      <p class="changed sub-indent"><strong>Cold Starting.</strong> Engine starts will follow the POH cold-weather starting procedure, and starter engagement will not exceed the POH starter duty-cycle limits. If the engine does not start within those limits, the member will discontinue start attempts and contact the manager. Repeated or excessive priming is <strong>prohibited</strong>.</p>
       <p class="changed"><strong>SF50</strong></p>
-      <p class="changed">The aircraft will be prepared for cold-weather starting, and engine starts will be conducted, as required by the AFM.</p>
+      <p class="changed sub-indent">The aircraft will be prepared for cold-weather starting, and engine starts will be conducted, as required by the AFM.</p>
 
       <h3>SR22T Operating Limitations</h3>
 
