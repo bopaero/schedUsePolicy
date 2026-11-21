@@ -2,7 +2,7 @@
 """Render the Scheduling and Use Policy to PDF from index.html.
 
 Usage:
-  python3 html-to-pdf.py                     # index.html -> canonical iCloud PDF
+  python3 html-to-pdf.py                     # index.html -> canonical Google Drive PDF
   python3 html-to-pdf.py index.html out.pdf  # explicit paths
 
 The PDF is the artifact owners and lessees actually sign (sent via DocuSign),
@@ -22,7 +22,7 @@ CHROME = pathlib.Path(
 )
 REPO = pathlib.Path(__file__).resolve().parent
 CANONICAL_PDF = pathlib.Path(
-    "~/Library/Mobile Documents/com~apple~CloudDocs/Bop Aero/BopAeroMediaAssets/"
+    "~/Library/CloudStorage/GoogleDrive-raymond@bopaero.com/Shared drives/bop Aero - Team/BopAeroMediaAssets/"
     "Scheduling and Use Policy/bop Aero® Scheduling and Use Policy.pdf"
 ).expanduser()
 

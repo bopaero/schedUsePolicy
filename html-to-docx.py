@@ -2,7 +2,7 @@
 """Regenerate the Scheduling and Use Policy docx from index.html.
 
 Usage:
-  python3 html-to-docx.py                     # index.html -> canonical iCloud docx
+  python3 html-to-docx.py                     # index.html -> canonical Google Drive docx
   python3 html-to-docx.py index.html out.docx # explicit paths
 
 The site is the source of truth for this direction: it rebuilds the docx from
@@ -27,7 +27,7 @@ import re, subprocess, sys, pathlib, tempfile
 
 REPO = pathlib.Path(__file__).resolve().parent
 CANONICAL_DOCX = pathlib.Path(
-    "~/Library/Mobile Documents/com~apple~CloudDocs/Bop Aero/BopAeroMediaAssets/"
+    "~/Library/CloudStorage/GoogleDrive-raymond@bopaero.com/Shared drives/bop Aero - Team/BopAeroMediaAssets/"
     "Scheduling and Use Policy/bop Aero\u00ae Scheduling and Use Policy.docx"
 ).expanduser()
 

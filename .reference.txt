@@ -1,9 +1,9 @@
 bop Aero Services LLC
 Aircraft Ownership Programs — Scheduling and Use Policies
 These policies govern the expectations and responsibilities of BOP AERO SERVICES LLC (the "Manager") and the Members of any BOP AERO Program Aircraft (the "Members") regarding the scheduling and use of the aircraft.
-This Scheduling and Use Policy is a living document. It is reviewed and updated periodically, and the Manager may amend it as the program, the fleet, applicable regulations, or operating experience require. Every revision is published at schedusepolicy.bopaero.com under its own version number, with changes from the previous version marked by a change bar. The current published version supersedes all prior versions. The Manager will notify Members and Lessees of each revision through the Flight Circle Message Notification System.
+This Scheduling and Use Policy is a living document. It is reviewed and updated periodically, and the Manager may amend it as the program, the fleet, applicable regulations, or operating experience require. Every revision is published at schedusepolicy.bopaero.com under its own version number, with changes from the previous version marked by a change bar. The current published version supersedes all prior versions. The Manager will notify Members and Lessees of each material revision through the Flight Circle Message Notification System.
 A Member's or Lessee's signed acknowledgment of this Policy applies to this Policy as amended from time to time. A signed acknowledgment remains in effect for subsequent revisions and does not require re-signature.
-Aircraft: The specific aircraft owned by the member documented on the filed FAA aircraft registration.
+Aircraft: The specific aircraft co-owned by the members, as documented on the filed FAA aircraft registration.
 Base: The physical location the aircraft is stored when not in possession of a member.
 Trip: All planned or actual points of takeoff and/or landing, originating at the location where the member took possession of the aircraft, and ending at the last point of landing, planned or actual, prior to transferring possession of the aircraft.
 Reservation: The scheduled length of time a member will possess the aircraft.
@@ -13,28 +13,28 @@ Flight meter: The instrument that records aircraft time from takeoff to touchdow
 Calendar day: A twenty-four (24) hour period beginning at 00:00 and ending at 23:59.
 "Use" day: Five (5) hours of aircraft time, as measured by the "Flight meter," accrued within a "Calendar day" in the time zone in which the aircraft is located at the start of the day. Used for planning and bookkeeping purposes only — it is not used to assess any fee or penalty, and it has no direct correlation to member usage.
 "Non-use" day: A planned or unplanned non-usage of the aircraft for a "Calendar day" while a member has possession of the aircraft. Determined by the time zone where the aircraft last terminated operations for the day.
-Member: Any registered Member of the program and, for the purposes of this Agreement, shall also include any Lessee, who shall be entitled to the same rights, privileges, and obligations as a Member unless otherwise specified.
+Member: Any owner of the aircraft, as documented on the filed FAA aircraft registration, and, for the purposes of this Agreement, shall also include any Lessee, who shall be entitled to the same rights, privileges, and obligations as a Member unless otherwise specified.
+Ownership percentage: Each member's percentage share of the aircraft, as stated in the aircraft's co-ownership agreement.
+Subscription date: The date on which the member signs their Letter of Intent.
 2. Aircraft Scheduling
 A. Schedule Management Software
 bop Aero uses Flight Circle to manage each aircraft's schedule. All member new reservations, modifications, and cancellations are managed through the web-based app. The manager will provide all new members access upon entry into an aircraft program. A web-based user guide is provided that can answer most questions regarding use of the software.
 B. Prior to Aircraft Acquisition
 Not applicable to lessees.
 1. The first date available for aircraft usage will be the projected acquisition date of the aircraft plus seven (7) days. The manager will notify members if the planned acquisition date changes.
-2. When the scheduling window opens, the scheduling order will be determined by members' aircraft ownership equity, highest to lowest. When ownership equity is the same, scheduling order will be determined by the date at which the member purchased their ownership equity (seniority). The manager will notify each member electronically when their scheduling window will open and close.
+2. When the scheduling window opens, the scheduling order will be determined by members' ownership percentage, highest to lowest. When ownership percentage is the same, scheduling order will be determined by the member's subscription date (seniority). The manager will notify each member electronically when their scheduling window will open and close.
 3. Waitlist: In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. The list order will be determined on a "first come, first serve" basis. Reservations added to the waitlist during the scheduling window are only valid for the remainder of the year. Waitlist (or Backup) reservations are added in the same way a normal reservation is added. However, the scheduler will not allow two normal reservations to overlap. To solve this, click the "Make Backup" button to add the Backup reservation. The waitlisted reservation will be displayed as a "Backup" reservation on the schedule.
 C. Annual Aircraft Scheduling
 Not applicable to lessees.
 1. Each year there will be a thirty-one (31) day window beginning on November 1st and ending November 30th to allow for aircraft scheduling for the upcoming year. In the event that the initial aircraft acquisition occurs after this day but prior to December 31st, then the annual aircraft scheduling for the upcoming year will be for thirty (30) days following the close of the initial acquisition scheduling window. If there is less than thirty (30) days remaining in the year, annual aircraft scheduling for the upcoming year will be integrated into the initial acquisition scheduling window.
 2. When the scheduling window opens, the scheduling order will be determined by the following rules:
 - Scheduling Order
-a. Highest ownership equity.
-b. Founder's Circle members with the highest ownership equity.
-c. Founder's Circle members by purchase date (seniority).
-d. Non-Founder's Circle members with the highest ownership equity.
-e. Non-Founder's Circle members by purchase date (seniority).
-The manager will notify each member electronically when their individual scheduling window will open.
-a. SR22T: Each member share will have one and a half (1.5) days to reserve the aircraft for the upcoming year during their scheduling window.
-b. SF50: Each member will have three (3) days to reserve the aircraft for the upcoming year during their scheduling window.
+a. Highest ownership percentage.
+b. Founder's Circle members with the highest ownership percentage.
+c. Founder's Circle members by subscription date (seniority).
+d. Non-Founder's Circle members with the highest ownership percentage.
+e. Non-Founder's Circle members by subscription date (seniority).
+The manager will determine the length of each member's individual scheduling window based on the number of members and their ownership percentages. Each member's individual scheduling window will be not less than two (2) days. The manager will notify each member electronically when their individual scheduling window will open and close.
 3. Waitlist: In the event the aircraft has been reserved for the date and time another member wishes to reserve the aircraft, members may add themselves to the aircraft waitlist for the date(s) and times desired. The list order will be determined on a "first come, first serve" basis. Waitlist (or Backup) reservations are added in the same way a normal reservation is added. However, the scheduler will not allow two normal reservations to overlap. To solve this, click the "Make Backup" button to add the Backup reservation. The waitlisted reservation will be displayed as a "Backup" reservation on the schedule.
 D. Daily Aircraft Scheduling
 Beginning on January 1st each year at midnight (00:00) in the timezone the aircraft is based (base local time), "Daily Aircraft Scheduling" will begin and will remain open twenty-four (24) hours a day, every day, until December 31st at 23:59 (base local time).
@@ -109,6 +109,17 @@ Flight into forecast severe icing, known or forecast hail, or thunderstorm activ
 Flight Into Known Icing
 Any pilot who operates or plans to operate the aircraft into known icing conditions will have completed the Cirrus Icing Awareness Course for the specific aircraft to be flown within the preceding twenty-four (24) calendar months.
 All ice protection equipment will be fully serviceable, with adequate fluid quantity for the intended flight.
+Cold Weather Operations
+All cold weather operations will meet or exceed the limitations and procedures of the manufacturer's POH or AFM for the specific aircraft. Where this policy is more restrictive than the POH or AFM, this policy governs.
+Before any flight, the member will ensure that all frost, ice, and snow has been removed from the wings, control surfaces, tail, propeller or engine inlet, windshield, and all static ports, pitot tubes, and sensors. Takeoff with any frost, ice, or snow adhering to these surfaces is prohibited.
+Contamination will be removed only by placing the aircraft in a heated hangar, by approved ground deicing, or by gentle brushing of loose snow. Scraping, chipping, or the use of any hard tool on the aircraft surfaces is prohibited.
+Ground deicing is required whenever frost, ice, or snow cannot be fully removed by the methods above, or when the aircraft will depart during active freezing precipitation. Only deicing fluids and procedures approved in the POH or AFM for the specific aircraft will be used, and the member will confirm the fluid type with the service provider before application. Any deice fluid costs, including ground deicing and replenishment of ice protection fluid used during the member's reservation, are the responsibility of the member.
+Engine Preheat. When the engine has been cold-soaked at an outside air temperature of 45°F (7°C) or below, it will be preheated for a minimum of six (6) hours before any start. Preheat may be accomplished either by keeping the aircraft in a heated hangar or, outdoors, by an engine heater with the engine cover installed. This limit is set by the Manager for engine longevity and is more conservative than the POH.
+At base, the member will notify the manager at least twenty-four (24) hours before the reservation begins when preheat will be required, and the manager will facilitate it at no charge to the member. Away from base, the member is responsible for arranging and paying for preheat.
+Starting a cold-soaked engine without the required preheat is a failure to operate the aircraft as prescribed and may result in fees or penalties as described above, including the cost of any resulting engine inspection or repair.
+Engine Cover. If an outside air temperature at or below 45°F (7°C) is anticipated or forecast at any point during the member's reservation, the engine cover will be carried aboard the aircraft for the duration of the trip and will be installed whenever the aircraft is parked overnight outside a hangar. This is a preventive measure in case a heated hangar cannot be obtained.
+Cold Starting. Engine starts will follow the POH cold-weather starting procedure, and starter engagement will not exceed the POH starter duty-cycle limits. If the engine does not start within those limits, the member will discontinue start attempts and contact the manager. Repeated or excessive priming is prohibited.
+The aircraft will be prepared for cold-weather starting, and engine starts will be conducted, as required by the AFM.
 SR22T Operating Limitations
 Cruise Power & Temperature
 In addition to complying with the policies outlined above, members will consider the maximum operational cruise power setting to be 75% power (based on the cruise performance data in Section 5 of the POH), and will observe a maximum Turbine Inlet Temperature (TIT) of 1600°F during cruise flight. These have been set by the Manager for engine longevity.
@@ -125,8 +136,12 @@ Smoking and the use of electronic cigarettes or vaporizers are prohibited aboard
 Pets may be carried provided the member notifies the manager in advance and the animal is crated or otherwise restrained for the duration of the flight.
 Members will return the aircraft in clean condition, free of trash and personal effects. Cleaning required beyond normal turnaround will be billed to the member at actual cost.
 Overnight Storage Away from Base
-When the aircraft remains overnight at a location other than its base, it will be secured at all tie-down points, with the pitot cover and any covers supplied with the aircraft fitted, and the cabin locked.
-Where hail, icing, or severe weather is forecast at that location, the member will arrange hangar storage.
+The tie-downs, chocks, pitot cover, engine inlet plugs, and any other covers supplied with the aircraft will be carried aboard for the duration of every trip.
+When the aircraft remains overnight, or is left unattended for more than four (4) hours, at a location other than its base, it will be chocked and secured at all tie-down points, with the pitot cover, engine inlet plugs, and all other supplied covers installed, and the cabin locked. When the aircraft is kept in a hangar, tie-downs, plugs, and covers are not required. All covers and plugs will be removed and stowed before engine start.
+Brake Status. Before leaving the aircraft unattended, the member will set the brakes and the BRAKE STATUS PLACARD, displayed in the left side of the windshield, as follows:
+- Aircraft chocked: the parking brake will be released and the placard set to “Brakes Released, Okay to tow.”
+- Aircraft not chocked: the parking brake will remain engaged and the placard set to “Brakes SET, DO NOT TOW.”
+Where hail, icing, or severe weather is forecast at that location, the member will arrange hangar storage. Where an overnight temperature at or below 45°F (7°C) is forecast, the member will either arrange hangar storage or prepare the aircraft for departure as described in Cold Weather Operations, including engine preheat.
 Hangar, tie-down, and ramp costs incurred away from base are the responsibility of the member.
 Maintenance Away from Base
 Members will report any aircraft discrepancy, damage, or abnormal indication to the manager immediately upon discovery.
@@ -151,10 +166,12 @@ SR22T 60 gals. (Tabs)
 - If the aircraft is returned with a fuel level greater than indicated above, the aircraft will not be fueled.
 - Aircraft fueling will be accomplished (or directed) by the manager upon return.
 - Members will only be billed for the fuel required to bring the fuel level up to the level indicated above.
+Oil & Other Consumables
+Oil and other consumables added during a member's reservation are the responsibility of the member, billed at actual cost.
 5. Assessment of Fees & Penalties
 Fees Incurred by a Member
 Unless otherwise stated, all fees/penalties incurred by a member will be paid to the manager.
-- Each member's annual program fee will be based on each member's ownership equity. Not applicable to Lessees.
+- Each member's annual program fee will be based on each member's ownership percentage. Not applicable to Lessees.
 - Cancellation fees will be paid to the aircraft's operating account.
 - Operational Policy violation fees will be paid to the manager unless the violation resulted in aircraft damage — in that case, additional fees to cover the damage will be paid to the aircraft's operating account.
 - Excessive Engine Cruise fees will be paid to the aircraft's operating account.
@@ -186,7 +203,7 @@ For all reservations that will include an international stop(s), the member will
 Operations to countries not listed above require prior approval of the manager. Additionally, due to insurance policy restrictions there may be an additional cost to the member associated with changes to the insurance policy to add a country not listed.
 Other than for operational planning and control purposes, the manager will assist members as necessary.
 8. Acknowledgment
-I further acknowledge that this Policy is a living document that will be amended from time to time, that the Manager will notify Members and Lessees of each revision through the Flight Circle Message Notification System, and that this acknowledgment applies to this Policy as amended and remains in effect for subsequent revisions without re-signature.
+I further acknowledge that this Policy is a living document that will be amended from time to time, that the Manager will notify Members and Lessees of each material revision through the Flight Circle Message Notification System, and that this acknowledgment applies to this Policy as amended and remains in effect for subsequent revisions without re-signature.
 ----------------------------------- ------------------------------
 Capacity (Member/Owner or Lessee)
 Program Aircraft
